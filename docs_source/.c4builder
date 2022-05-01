@@ -3,7 +3,7 @@
 	"projectName": "Dispensa de Disciplinas",
 	"homepageName": "Overview",
 	"rootFolder": "src",
-	"distFolder": "../site",
+	"distFolder": "../docs",
 	"generateMD": true,
 	"generatePDF": false,
 	"generateCompleteMD": false,
