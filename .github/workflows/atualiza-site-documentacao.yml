@@ -1,7 +1,12 @@
 name: atualiza-site-documentacao
-on: [push]
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-build:
+  build:
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -10,4 +15,4 @@ build:
       - name: C4Builder
         uses: clippings/c4builder-action@v1
         with:
-          path: 'docs'
+          path: "docs"
