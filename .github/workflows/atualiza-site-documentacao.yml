@@ -1,0 +1,13 @@
+name: atualiza-site-documentacao
+on: [push]
+jobs:
+build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: C4Builder
+        uses: clippings/c4builder-action@v1
+        with:
+          path: 'docs'

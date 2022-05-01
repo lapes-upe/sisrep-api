@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="598px" preserveAspectRatio="none" style="width:935px;height:598px;background:#FFFFFF;" version="1.1" viewBox="0 0 935 598" width="935px" zoomAndPan="magnify"><defs/><g><!--MD5=[38c27b35aef4eebaf210b1fd39b25fb0]
+cluster spa--><g id="cluster_spa"><rect height="399.5" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="689" x="7" y="7"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="204" x="249.5" y="23.8516">Single Page Application</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="311.5" y="38.7637">[Container]</text></g><!--MD5=[54409d5519d7646972cabb5538a3d297]
+entity routing--><g id="elem_routing"><rect fill="#85BBF0" height="85.1875" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="204" x="449" y="82.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="68" x="517" y="107.3516">Routing</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="89" x="506.5" y="122.2637">[React router]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="549" y="138.0889"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="463" y="154.3857">Handler slient side routing</text></g><!--MD5=[0686720d71d32ea68f81164171d509ce]
+entity store--><g id="elem_store"><rect fill="#85BBF0" height="101.4844" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="208" x="246" y="281.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="96" x="302" y="306.3516">Data Store</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="326" y="321.2637">[Redux]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="348" y="337.0889"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="260" y="353.3857">The central object holding</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="280" y="369.6826">the application state</text></g><!--MD5=[2c4d6263d6a9c508a624946e4f5b83db]
+entity login--><g id="elem_login"><rect fill="#85BBF0" height="85.1875" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="127" x="286.5" y="82.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="95" x="302.5" y="107.3516">Login form</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="308.5" y="122.2637">[React Class]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="348" y="138.0889"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="300.5" y="154.3857">The login page</text></g><!--MD5=[7acc01a6845e7bd2e8afe94137bb9829]
+entity profile--><g id="elem_profile"><rect fill="#85BBF0" height="117.7813" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="220" x="31" y="66"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="87.5" y="90.8516">Profile Page</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="99.5" y="105.7637">[React Class]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="139" y="121.5889"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="45" y="137.8857">The page where the logged</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="54" y="154.1826">in user can view and edit</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="76.5" y="170.4795">his/her information</text></g><!--MD5=[e2307af040e3f87d22824e7603ca28ec]
+entity api--><g id="elem_api"><rect fill="#438DD5" height="117.7813" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="209" x="720.5" y="273"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="132" x="759" y="297.8516">API Application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="756.5" y="312.7637">[java and Spring MVC]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="823" y="328.5889"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="734.5" y="344.8857">Delivers the static content</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="738" y="361.1826">and the internet banking</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="744" y="377.4795">single page application.</text></g><!--MD5=[b20751f21bc3c5e56073fe913b5ac5ab]
+link spa to api--><g id="link_spa_api"><path d="M696.2244,138.3097 C696.8869,139.3011 697.5843,140.3447 698.3147,141.4378 C704.1581,150.1825 712.1163,162.0913 721.2175,175.71 C739.42,202.9475 762.195,237.025 781.77,266.31 " fill="none" id="spa-to-api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="786.24,273,784.2944,264.6805,779.3038,268.0111,786.24,273" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="788.5" y="226.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="765" y="240.1074">[JSON/HTTPS]</text></g><!--MD5=[334ae2b5ea9a67a6cab925c77e9701c3]
+link login to store--><g id="link_login_store"><path d="M350,167.98 C350,198.32 350,239.69 350,273.16 " fill="none" id="login-to-store" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="350,281.49,353,273.49,347,273.49,350,281.49" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="351" y="233.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="4" x="386" y="233.1387">;</text></g><!--MD5=[236a7b55e2b2bbdd3d38377a1d6ad24a]
+link routing to store--><g id="link_routing_store"><path d="M509.84,167.98 C479.33,199.1 437.45,241.8 404.22,275.7 " fill="none" id="routing-to-store" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="398.54,281.49,406.2821,277.8761,401.9968,273.6765,398.54,281.49" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="464" y="233.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="4" x="499" y="233.1387">;</text></g><!--MD5=[4fc1864ed4b873a370455e3590a7eeea]
+link profile to store--><g id="link_profile_store"><path d="M200.33,184.2 C229.51,212.82 264.51,247.15 293.33,275.41 " fill="none" id="profile-to-store" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="299.38,281.35,295.7758,273.6034,291.5708,277.8834,299.38,281.35" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="260" y="233.1387">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="4" x="295" y="233.1387">;</text></g><rect height="162.6719" rx="7.5" ry="7.5" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="159" x="754.5" y="419.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="760.5" y="440.4951">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="819.5" y="440.4951"> </text><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="443.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="764.5" y="456.792">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="460.0938"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="764.5" y="473.0889">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="476.3906"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="764.5" y="489.3857">container</text><rect fill="#85BBF0" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="492.6875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="764.5" y="505.6826">component</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="508.9844"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="764.5" y="521.9795">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="525.2813"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="764.5" y="538.2764">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="541.5781"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="764.5" y="554.5732">external container</text><rect fill="#CCCCCC" height="16.2969" style="stroke:none;stroke-width:1.0;" width="147" x="760.5" y="557.875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="764.5" y="570.8701">external component</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="427.5" y2="427.5"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="443.7969" y2="443.7969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="460.0938" y2="460.0938"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="476.3906" y2="476.3906"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="492.6875" y2="492.6875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="508.9844" y2="508.9844"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="525.2813" y2="525.2813"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="541.5781" y2="541.5781"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="557.875" y2="557.875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="907.5" y1="574.1719" y2="574.1719"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="760.5" x2="760.5" y1="427.5" y2="574.1719"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="907.5" x2="907.5" y1="427.5" y2="574.1719"/><!--MD5=[65c5ff731c4f51547abb4f70eab0bf7b]
+@startuml
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+Container(api, "API Application", "java and Spring MVC", "Delivers the static content and the internet banking single page application.")
+
+Container_Boundary(spa, "Single Page Application") {
+    Component(routing, "Routing", "React router", "Handler slient side routing")
+    Component(store, "Data Store", "Redux", "The central object holding the application state")
+    Component(login, "Login form", "React Class", "The login page")
+    Component(profile, "Profile Page", "React Class", "The page where the logged in user can view and edit his/her information")
+}
+
+Rel(spa, api, "Uses", "JSON/HTTPS")
+
+Rel(login, store, "Uses");
+Rel(routing, store, "Uses");
+Rel(profile, store, "Uses");
+
+@enduml
+
+@startuml
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#85BBF0> component |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+|<#CCCCCC> external component |
+endlegend
+
+rectangle "==API Application\n//<size:12>[java and Spring MVC]</size>//\n\n Delivers the static content and the internet banking single page application." <<container>> as api
+
+rectangle "==Single Page Application\n<size:12>[Container]</size>" <<boundary>> as spa {
+    rectangle "==Routing\n//<size:12>[React router]</size>//\n\n Handler slient side routing" <<component>> as routing
+    rectangle "==Data Store\n//<size:12>[Redux]</size>//\n\n The central object holding the application state" <<component>> as store
+    rectangle "==Login form\n//<size:12>[React Class]</size>//\n\n The login page" <<component>> as login
+    rectangle "==Profile Page\n//<size:12>[React Class]</size>//\n\n The page where the logged in user can view and edit his/her information" <<component>> as profile
+}
+
+spa - ->> api : **Uses**\n//<size:12>[JSON/HTTPS]</size>//
+
+login - ->> store : **Uses**;
+routing - ->> store : **Uses**;
+profile - ->> store : **Uses**;
+
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 13:10:57 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>

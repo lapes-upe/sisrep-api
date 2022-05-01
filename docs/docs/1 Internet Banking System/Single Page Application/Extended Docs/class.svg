@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="220px" preserveAspectRatio="none" style="width:409px;height:220px;background:#FFFFFF;" version="1.1" viewBox="0 0 409 220" width="409px" zoomAndPan="magnify"><defs/><g><!--MD5=[728d23d58e22fa55ea5a0544ed140874]
+cluster net.dummy--><g id="cluster_net.dummy"><path d="M8.5,6 L97.5,6 A3.75,3.75 0 0 1 100,8.5 L107,28.2969 L123.5,28.2969 A2.5,2.5 0 0 1 126,30.7969 L126,210.5 A2.5,2.5 0 0 1 123.5,213 L8.5,213 A2.5,2.5 0 0 1 6,210.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " fill="#DDDDDD" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="107" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="88" x="10" y="20.9951">net.dummy</text></g><!--MD5=[33e59a955278c32565a5bf6f302dc15e]
+cluster net.foo--><g id="cluster_net.foo"><path d="M152.5,114 L210.5,114 A3.75,3.75 0 0 1 213,116.5 L220,136.2969 L261.5,136.2969 A2.5,2.5 0 0 1 264,138.7969 L264,210.5 A2.5,2.5 0 0 1 261.5,213 L152.5,213 A2.5,2.5 0 0 1 150,210.5 L150,116.5 A2.5,2.5 0 0 1 152.5,114 " style="stroke:#000000;stroke-width:1.5;fill:none;"/><line style="stroke:#000000;stroke-width:1.5;fill:none;" x1="150" x2="220" y1="136.2969" y2="136.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="154" y="128.9951">net.foo</text></g><!--MD5=[a192a6f29c441cea5ef200ac5f138a29]
+cluster net.unused--><g id="cluster_net.unused"><path d="M290.5,114 L381.5,114 A3.75,3.75 0 0 1 384,116.5 L391,136.2969 L399.5,136.2969 A2.5,2.5 0 0 1 402,138.7969 L402,210.5 A2.5,2.5 0 0 1 399.5,213 L290.5,213 A2.5,2.5 0 0 1 288,210.5 L288,116.5 A2.5,2.5 0 0 1 290.5,114 " style="stroke:#000000;stroke-width:1.5;fill:none;"/><line style="stroke:#000000;stroke-width:1.5;fill:none;" x1="288" x2="391" y1="136.2969" y2="136.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="90" x="292" y="128.9951">net.unused</text></g><!--MD5=[cb3a15f9f15e1ea33d1c370015e332c8]
+class net.dummy.Person--><g id="elem_net.dummy.Person"><rect fill="#F1F1F1" height="48" id="net.dummy.Person" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="81" x="28.5" y="149"/><ellipse cx="43.5" cy="165" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M46.4688,170.6406 Q45.8906,170.9375 45.25,171.0781 Q44.6094,171.2344 43.9063,171.2344 Q41.4063,171.2344 40.0781,169.5938 Q38.7656,167.9375 38.7656,164.8125 Q38.7656,161.6875 40.0781,160.0313 Q41.4063,158.375 43.9063,158.375 Q44.6094,158.375 45.25,158.5313 Q45.9063,158.6875 46.4688,158.9844 L46.4688,161.7031 Q45.8438,161.125 45.25,160.8594 Q44.6563,160.5781 44.0313,160.5781 Q42.6875,160.5781 42,161.6563 Q41.3125,162.7188 41.3125,164.8125 Q41.3125,166.9063 42,167.9844 Q42.6875,169.0469 44.0313,169.0469 Q44.6563,169.0469 45.25,168.7813 Q45.8438,168.5 46.4688,167.9219 L46.4688,170.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="57.5" y="169.8467">Person</text><line style="stroke:#181818;stroke-width:0.5;" x1="29.5" x2="108.5" y1="181" y2="181"/><line style="stroke:#181818;stroke-width:0.5;" x1="29.5" x2="108.5" y1="189" y2="189"/></g><!--MD5=[8ac4e197c3b047d8b0ccbf03414837ae]
+class net.dummy.Meeting--><g id="elem_net.dummy.Meeting"><rect fill="#F1F1F1" height="48" id="net.dummy.Meeting" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="88" x="22" y="41"/><ellipse cx="37" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M39.9688,62.6406 Q39.3906,62.9375 38.75,63.0781 Q38.1094,63.2344 37.4063,63.2344 Q34.9063,63.2344 33.5781,61.5938 Q32.2656,59.9375 32.2656,56.8125 Q32.2656,53.6875 33.5781,52.0313 Q34.9063,50.375 37.4063,50.375 Q38.1094,50.375 38.75,50.5313 Q39.4063,50.6875 39.9688,50.9844 L39.9688,53.7031 Q39.3438,53.125 38.75,52.8594 Q38.1563,52.5781 37.5313,52.5781 Q36.1875,52.5781 35.5,53.6563 Q34.8125,54.7188 34.8125,56.8125 Q34.8125,58.9063 35.5,59.9844 Q36.1875,61.0469 37.5313,61.0469 Q38.1563,61.0469 38.75,60.7813 Q39.3438,60.5 39.9688,59.9219 L39.9688,62.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="51" y="61.8467">Meeting</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="109" y1="73" y2="73"/><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="109" y1="81" y2="81"/></g><!--MD5=[39b7869a7bbdf1e166c12fc90d8f21cb]
+class net.foo.Person--><g id="elem_net.foo.Person"><rect fill="#F1F1F1" height="48" id="net.foo.Person" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="81" x="166.5" y="149"/><ellipse cx="181.5" cy="165" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M184.4688,170.6406 Q183.8906,170.9375 183.25,171.0781 Q182.6094,171.2344 181.9063,171.2344 Q179.4063,171.2344 178.0781,169.5938 Q176.7656,167.9375 176.7656,164.8125 Q176.7656,161.6875 178.0781,160.0313 Q179.4063,158.375 181.9063,158.375 Q182.6094,158.375 183.25,158.5313 Q183.9063,158.6875 184.4688,158.9844 L184.4688,161.7031 Q183.8438,161.125 183.25,160.8594 Q182.6563,160.5781 182.0313,160.5781 Q180.6875,160.5781 180,161.6563 Q179.3125,162.7188 179.3125,164.8125 Q179.3125,166.9063 180,167.9844 Q180.6875,169.0469 182.0313,169.0469 Q182.6563,169.0469 183.25,168.7813 Q183.8438,168.5 184.4688,167.9219 L184.4688,170.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="195.5" y="169.8467">Person</text><line style="stroke:#181818;stroke-width:0.5;" x1="167.5" x2="246.5" y1="181" y2="181"/><line style="stroke:#181818;stroke-width:0.5;" x1="167.5" x2="246.5" y1="189" y2="189"/></g><!--MD5=[5f30d223f747d8ac33b5eb84f5743c2a]
+class net.unused.Person--><g id="elem_net.unused.Person"><rect fill="#F1F1F1" height="48" id="net.unused.Person" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="81" x="304.5" y="149"/><ellipse cx="319.5" cy="165" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M322.4688,170.6406 Q321.8906,170.9375 321.25,171.0781 Q320.6094,171.2344 319.9063,171.2344 Q317.4063,171.2344 316.0781,169.5938 Q314.7656,167.9375 314.7656,164.8125 Q314.7656,161.6875 316.0781,160.0313 Q317.4063,158.375 319.9063,158.375 Q320.6094,158.375 321.25,158.5313 Q321.9063,158.6875 322.4688,158.9844 L322.4688,161.7031 Q321.8438,161.125 321.25,160.8594 Q320.6563,160.5781 320.0313,160.5781 Q318.6875,160.5781 318,161.6563 Q317.3125,162.7188 317.3125,164.8125 Q317.3125,166.9063 318,167.9844 Q318.6875,169.0469 320.0313,169.0469 Q320.6563,169.0469 321.25,168.7813 Q321.8438,168.5 322.4688,167.9219 L322.4688,170.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="333.5" y="169.8467">Person</text><line style="stroke:#181818;stroke-width:0.5;" x1="305.5" x2="384.5" y1="181" y2="181"/><line style="stroke:#181818;stroke-width:0.5;" x1="305.5" x2="384.5" y1="189" y2="189"/></g><!--MD5=[8e57f1f895cc705ad5645d1ac73dc0a2]
+class BaseClass--><g id="elem_BaseClass"><rect codeLine="7" fill="#F1F1F1" height="48" id="BaseClass" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="104" x="150" y="41"/><ellipse cx="165" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M167.9688,62.6406 Q167.3906,62.9375 166.75,63.0781 Q166.1094,63.2344 165.4063,63.2344 Q162.9063,63.2344 161.5781,61.5938 Q160.2656,59.9375 160.2656,56.8125 Q160.2656,53.6875 161.5781,52.0313 Q162.9063,50.375 165.4063,50.375 Q166.1094,50.375 166.75,50.5313 Q167.4063,50.6875 167.9688,50.9844 L167.9688,53.7031 Q167.3438,53.125 166.75,52.8594 Q166.1563,52.5781 165.5313,52.5781 Q164.1875,52.5781 163.5,53.6563 Q162.8125,54.7188 162.8125,56.8125 Q162.8125,58.9063 163.5,59.9844 Q164.1875,61.0469 165.5313,61.0469 Q166.1563,61.0469 166.75,60.7813 Q167.3438,60.5 167.9688,59.9219 L167.9688,62.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="179" y="61.8467">BaseClass</text><line style="stroke:#181818;stroke-width:0.5;" x1="151" x2="253" y1="73" y2="73"/><line style="stroke:#181818;stroke-width:0.5;" x1="151" x2="253" y1="81" y2="81"/></g><!--MD5=[38d283ab138c7dee77115f9fbc859330]
+reverse link BaseClass to net.dummy.Person--><g id="link_BaseClass_net.dummy.Person"><path codeLine="10" d="M155.65,101.54 C153.74,103.05 151.85,104.54 150,106 C132.22,120.08 112.49,136.14 96.96,148.9 " fill="none" id="BaseClass-backto-net.dummy.Person" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="151.55,95.87,171.64,89.12,160.14,106.92,151.55,95.87" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3aad075c01a5f1f4921d0fd2481fc4e0]
+reverse link net.dummy.Meeting to net.dummy.Person--><g id="link_net.dummy.Meeting_net.dummy.Person"><path codeLine="11" d="M67.03,102.34 C67.46,117.68 67.96,135.1 68.34,148.68 " fill="none" id="net.dummy.Meeting-backto-net.dummy.Person" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="66.65,89,62.8163,95.1076,66.9795,100.9955,70.8133,94.8879,66.65,89" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5b94dd299fdb64f5042d8ccdd246a8aa]
+reverse link BaseClass to net.dummy.Meeting--><g id="link_BaseClass_net.dummy.Meeting"><path codeLine="13" d="M129.71,65 C123.17,65 116.63,65 110.09,65 " fill="none" id="BaseClass-backto-net.dummy.Meeting" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="129.94,58,149.94,65,129.94,72,129.94,58" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b57b6e1cdce0b532ba1371e9c7d07ce1]
+reverse link net.dummy.Person to net.foo.Person--><g id="link_net.dummy.Person_net.foo.Person"><path codeLine="18" d="M130.05,173 C142.14,173 154.24,173 166.33,173 " fill="none" id="net.dummy.Person-backto-net.foo.Person" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="129.7,180,109.7,173,129.7,166,129.7,180" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3949315fc233572465e48cd9e3f6e864]
+reverse link BaseClass to net.foo.Person--><g id="link_BaseClass_net.foo.Person"><path codeLine="19" d="M204.03,109.02 C204.67,122.58 205.35,137.04 205.9,148.68 " fill="none" id="BaseClass-backto-net.foo.Person" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="197.04,109.31,203.08,89,211.02,108.65,197.04,109.31" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[736f19012fcb2f75c0b04526aeb93c2d]
+reverse link net.dummy.Meeting to net.foo.Person--><g id="link_net.dummy.Meeting_net.foo.Person"><path codeLine="21" d="M112.96,96.67 C117.41,99.77 121.81,102.91 126,106 C144.39,119.57 164.3,135.77 179.78,148.73 " fill="none" id="net.dummy.Meeting-backto-net.foo.Person" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="101.92,89.14,104.6224,95.8256,111.8331,95.9025,109.1307,89.2169,101.92,89.14" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[20bb99b6116bfc237a0342da45d84df8]
+reverse link BaseClass to net.unused.Person--><g id="link_BaseClass_net.unused.Person"><path codeLine="24" d="M256.03,100.35 C258.75,102.23 261.42,104.12 264,106 C282.64,119.54 302.72,135.89 318.22,148.93 " fill="none" id="BaseClass-backto-net.unused.Person" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="251.88,105.99,239.17,89.03,259.68,94.36,251.88,105.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[20fbc5a80046aa12f5addcb51e5411c3]
+@startuml
+' Split into 4 pages
+page 2x2
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor black
+
+class BaseClass
+
+namespace net.dummy #DDDDDD {
+	.BaseClass <|- - Person
+	Meeting o- - Person
+	
+	.BaseClass <|- Meeting
+
+}
+
+namespace net.foo {
+  net.dummy.Person  <|- Person
+  .BaseClass <|- - Person
+
+  net.dummy.Meeting o- - Person
+}
+
+BaseClass <|- - net.unused.Person
+@enduml
+
+@startuml
+page 2x2
+skinparam pageMargin 10
+skinparam pageExternalColor gray
+skinparam pageBorderColor black
+
+class BaseClass
+
+namespace net.dummy #DDDDDD {
+	.BaseClass <|- - Person
+	Meeting o- - Person
+	
+	.BaseClass <|- Meeting
+
+}
+
+namespace net.foo {
+  net.dummy.Person  <|- Person
+  .BaseClass <|- - Person
+
+  net.dummy.Meeting o- - Person
+}
+
+BaseClass <|- - net.unused.Person
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 13:10:57 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>
