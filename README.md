@@ -35,6 +35,10 @@ Será através dela que os discentes, docentes, coordenadores de curso, secretar
 
 - [Parecer CES 067/03](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f3529ec-8550-4ccb-a44a-8f3fa7c19717/parecer_ces_067_03.pdf)
 
+## Documentação do Sistema
+
+A documentação de referência do projeto está sendo desenvolvida utilizando a abordagem "doc as code" e está hospedada em [https://lapes-upe.github.io/dispensa-api/](https://lapes-upe.github.io/dispensa-api/)
+
 ## ✌ Contribuição
 
 1. Crie um fork (<https://github.com/lapes-upe/dispensa-disciplina/fork>)
