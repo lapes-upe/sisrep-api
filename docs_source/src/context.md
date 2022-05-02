@@ -4,7 +4,7 @@ Aqui você vai encontrar todas as informações básicas sobre o projeto SisPRE 
 
 ---
 
-A resolução [CEPE Nº 035/2016](/assets/resolucao_035_2016.pdf) é o insturmento que normatiza o Processo de Reaproveitamento de Estudos (PRE) nos cursos de graduação no âmbito da Universidade de Pernambuco. Este instrumento de referência tem como base o parecer do CNE/CES(67/2003) e atualiza a resolução CEPE 038/2015.e visa estimular práticas de estudos independentes em busca de uma autonomia intelectual e profissional progressiva do discente.
+A resolução [CEPE Nº 035/2016](../docs/assets/resolucao_035_2016.pdf) é o insturmento que normatiza o Processo de Reaproveitamento de Estudos (PRE) nos cursos de graduação no âmbito da Universidade de Pernambuco. Este instrumento de referência tem como base o parecer do CNE/CES(67/2003) e atualiza a resolução CEPE 038/2015.e visa estimular práticas de estudos independentes em busca de uma autonomia intelectual e profissional progressiva do discente.
 
 ## **O que é o SisPRE?**
 
