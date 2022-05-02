@@ -37,11 +37,11 @@ Será através dela que os discentes, docentes, coordenadores de curso, secretar
 
 ## Documentação do Sistema
 
-A documentação de referência do projeto está sendo desenvolvida utilizando a abordagem "doc as code" e está hospedada em [https://lapes-upe.github.io/dispensa-api/](https://lapes-upe.github.io/dispensa-api/)
+A documentação de referência do projeto está sendo desenvolvida utilizando a abordagem "doc as code" e está hospedada em [https://lapes-upe.github.io/sisrep-api/](https://lapes-upe.github.io/sisrep-api/)
 
 ## ✌ Contribuição
 
-1. Crie um fork (<https://github.com/lapes-upe/dispensa-disciplina/fork>)
+1. Crie um fork (<https://github.com/lapes-upe/sisrep-api/fork>)
 2. Crie uma branch de feature (`git checkout -b feature/fooBar`)
 3. Commite suas mudanças (`git commit -am 'Add some fooBar'`)
 4. Envie um push de seu commit (`git push origin feature/fooBar`)
