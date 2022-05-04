@@ -1,0 +1,21 @@
+@startuml login
+skinparam Style strictuml
+
+(Fazer login com sistema) as preencher
+(Redirecionar Usuario) as confirm
+(Verificar login) as login 
+(Fazer login com o google) as google
+(Redirecionar para o cadastro) as redirecionar
+
+:Usuario: as user
+:Sistema:  as sist
+
+rectangle Login{
+    sist -> confirm
+    sist -left-> login
+    sist --> user 
+    user -->google
+    user -->preencher
+    user -->redirecionar
+}
+@enduml
