@@ -1,0 +1,14 @@
+@startuml Solicitação de documentos para reaproveitamento de diciplina.
+start
+repeat: Receber a solitação de\ndocumentos do **aluno**;
+    :Disponibizar documentos solicitados;
+    if (O aluno possui pendências?) then (sim)
+        :Resolução de pendências;
+    else (não)
+    endif
+    :Conferir documentos;
+repeat while (Todos os documentos?) is (não)
+->sim;
+:Entregar de documentos ao **aluno**;
+end
+@enduml

@@ -1,0 +1,14 @@
+@startuml Solicitação de dispensa pelo aluno.
+start
+:Solicitar formulário de dispensa
+        de diciplinas à **UPE**;
+:Receber formulário;
+:Solicitar documentos para a
+dispensa ao **IES anterior**;
+:Receber documentos;
+:Preencher formulário
+e anexar documentos;
+:Realizar solicitação de
+dispensa de disciplinas à **UPE**;
+end
+@enduml
