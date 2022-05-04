@@ -1,0 +1,17 @@
+@startuml login
+start
+split
+    :Realizar login\npelo sistema;
+    note right: O usuário deve\nestar cadastrado.
+    repeat
+        :Inserir e-mail\ninstitucional;
+        :Inserir senha;
+    repeat while (Dados inválidos?) is (Sim)
+    ->Não;
+split again
+    :Realizar login\npelo google;
+split again
+    :Realizar login\npelo facebook;
+end split
+end
+@enduml

@@ -1,0 +1,14 @@
+@startuml cadastro na plataforma
+start
+if(Já possui conta?) then (Não)
+    repeat
+        :Informar e-mail\ninstitucional;
+        :Digitar senha;
+        :Repetir senha;
+    repeat while (Campos invalidos?) is (Sim)
+    ->Não;
+endif
+:Realizar login;
+note right: Consulte o diagrama\nde atividades de login\npara mais detalhes.
+end
+@enduml
