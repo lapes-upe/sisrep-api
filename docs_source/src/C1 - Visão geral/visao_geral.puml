@@ -1,0 +1,51 @@
+@startuml
+
+    database PostgreSQL {
+
+    }
+
+    node "SisREP - API" as api {
+        component application {
+            package dataprovider {
+                rectangle "@javax.inject.Named\nRepositoryImpl"  as repoImpl
+            }
+
+            package entrypoints {
+                rectangle "<<interface>>\nController"  as ctrl
+                rectangle "RestController"  as rest
+
+                rest .up.|> ctrl
+            }
+        }
+        component core {
+            package core.dataprovider {
+                rectangle "<<interface>>\nRepository"  as repo
+            }
+
+            package core.usecases {
+                rectangle "@javax.inject.Named\nUseCaseImpl"  as ucImpl
+                rectangle "<<interface>>\nUseCase"  as uc
+
+                ucImpl .up.|> uc
+                ucImpl .up.> repo
+                ctrl ..> uc
+                repoImpl .up.> PostgreSQL : "jdbc"
+            }
+        }
+
+        repoImpl ..|> repo
+    }
+    
+    HTTP <-- api : fornece
+
+    node "SisREP - React" {        
+        component telas {
+            [Componentes]
+        }
+        [Rotas] .left.> telas : "usam"
+        telas .right.> [Rotas] : "proveem"
+        telas .down.> [Servicos] : "usam"
+    }
+
+    [Servicos] .down.> HTTP : "consome"
+@enduml

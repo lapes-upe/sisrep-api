@@ -1,7 +1,7 @@
 {
 	"plantumlVersion": "latest",
-	"projectName": "Dispensa de Disciplinas",
-	"homepageName": "Overview",
+	"projectName": "SisRep API",
+	"homepageName": "Sistema de Reaproveitamento de Disciplinas",
 	"rootFolder": "src",
 	"distFolder": "../docs",
 	"generateMD": true,
@@ -13,12 +13,12 @@
 	"includeTableOfContents": true,
 	"webTheme": " https://unpkg.com/docsify/lib/themes/vue.css",
 	"supportSearch": true,
-	"repoUrl": "https://github.com/lapes-upe/dispensa-api",
+	"repoUrl": "https://github.com/lapes-upe/sisrep-api",
 	"docsifyTemplate": "",
 	"webPort": "3000",
 	"includeBreadcrumbs": true,
 	"includeLinkToDiagram": false,
-	"diagramsOnTop": true,
+	"diagramsOnTop": false,
 	"embedDiagram": true,
 	"excludeOtherFiles": false,
 	"generateLocalImages": true,
@@ -27,6 +27,6 @@
 	"charset": "UTF-8",
 	"hasRun": true,
 	"checksums": [
-		"ab8f0dbc28b2d93a241302aba141fdae1388aa5fa8f76da8929daa6c45c6199c"
+		"605d29bba8b2461222810024b2c01a1d37c78a93baf816dea1a0cd67b5a598cc"
 	]
 }
