@@ -1,0 +1,17 @@
+@startuml cadastro
+skinparam Style strictuml
+
+(Preencher informações\nde cadastro) as preencher
+(Armazenar informações) as armazenar 
+(Validar informações) as confirm
+
+:Usuario: as user
+:Sistema:  as sist
+
+rectangle Cadastro{
+    sist -left-> confirm
+    sist ->armazenar
+    sist --> user 
+    user -right-> preencher
+}
+@enduml
