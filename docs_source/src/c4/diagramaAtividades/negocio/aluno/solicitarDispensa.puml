@@ -1,7 +1,7 @@
 @startuml Solicitação de dispensa pelo aluno.
 start
 :Solicitar formulário de dispensa
-        de diciplinas à **UPE**;
+de diciplinas à **UPE**;
 :Receber formulário;
 :Solicitar documentos para a
 dispensa ao **IES anterior**;
