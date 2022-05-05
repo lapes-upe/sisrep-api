@@ -1,0 +1,29 @@
+@startuml Processo para UPE aceitar a carga horária da IES anterior.
+|Secretaria do curso|
+start
+:Receber solicitação de formulário
+de dispensa pelo **aluno**;
+:Entregar formulário ao **aluno**;
+:Receber formulário preenchido
+e documentos da **IES anterior**;
+:Conferir documentação;
+:Enviar documentação
+a **coordenação do curso**;
+|Secretaria do curso|
+|Cordenação do curso|
+:Receber documentação;
+:Avaliar se as diciplinas são equivalentes;
+if (As diciplinas são equivalentes?) then (não)
+    end
+    endif
+    :Separar diciplinas aceitas e não aceitas;
+    :Enviar relação diciplinas
+    aceitas à **coordenação de graduação**;
+|Cordenação do curso|
+|Cordenação de gradução|
+:Receber relação de diciplinas aceitas;
+:Realizar alterações no 
+histórico escolar do Siga;
+end
+|Cordenação de gradução|
+@enduml
