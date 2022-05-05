@@ -9,6 +9,6 @@ repeat: Receber a solitação de\ndocumentos do **aluno**;
     :Conferir documentos;
 repeat while (Todos os documentos?) is (não)
 ->sim;
-:Entregar de documentos ao **aluno**;
+:Entregar documentos ao **aluno**;
 end
 @enduml
