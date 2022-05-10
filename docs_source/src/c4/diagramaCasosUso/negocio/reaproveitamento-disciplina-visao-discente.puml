@@ -1,0 +1,35 @@
+@startuml Discente 
+!startsub DISC
+
+    left to right direction
+    rectangle Discente {
+        "Discente" as aluno
+
+        (Preencher Requerimento) as preencherRequerimento
+        (Listar Requerimentos) as listarRequerimentos
+        (Excluir Requerimento) as excluirRequerimento
+        (Solicitar Reaproveitamento) as solicitaReaproveitamento
+        (Anexar Documento) as anexarDocumento    
+        (Monitorar Requerimentos) as monitorarRequerimento
+        (Detalhar Requerimento) as detalharRequerimento
+        (Pesquisar Requerimento) as pesquisarRequerimento
+        (Revisar Pendências Requerimento) as revisarRequerimento
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+
+        aluno --> preencherRequerimento
+        aluno --> monitorarRequerimento
+        aluno --> listarRequerimentos
+
+        solicitaReaproveitamento <.up. preencherRequerimento  : extends
+        preencherRequerimento .up.> anexarDocumento : include
+        revisarRequerimento .left.> anexarDocumento : extends
+        monitorarRequerimento ..> detalharRequerimento  : extends
+        detalharRequerimento ..> revisarRequerimento  : extends
+        listarRequerimentos ..> detalharRequerimento  : extends
+        listarRequerimentos ..> excluirRequerimento  : extends
+        listarRequerimentos ..> pesquisarRequerimento  : include
+        detalharRequerimento ..> detalharAnaliseReaproveitamento  : extends
+    }
+    
+!endsub
+@enduml

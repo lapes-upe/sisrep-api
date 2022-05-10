@@ -1,0 +1,33 @@
+@startuml Coordenação
+!startsub COORD
+    left to right direction
+    rectangle Coordenações {
+        "Coordenador" as coordenacao
+        "Docente" as docente
+        (Monitorar Solicitação de Parecer de Reaproveitamento) as monitorarParecer
+        (Pesquisar Solicitação de Parecer de Reaproveitamento) as pesquisarParecer
+        (Detalhar Solicitação de Parecer de Reaproveitamento) as detalharParecer
+        (Solicitar Parecer Docente de Reaproveitamento) as solicitarParecerDocente
+        (Emitir Parecer de Reaproveitamento) as emitirParecer
+
+        (Monitorar Parecer Docente de Reaproveitamento) as monitorarParecerDocente
+        (Emitir Parecer Docente de Reaproveitamento) as emitirParecerDocente
+        (Pesquisar Parecer Docente de Reaproveitamento) as pesquisarParecerDocente
+
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+
+        coordenacao --> monitorarParecer
+        emitirParecer <.. monitorarParecer : extends
+        emitirParecer <.. detalharAnaliseReaproveitamento : extends
+        detalharParecer <.. monitorarParecer : extends
+        monitorarParecer ..> pesquisarParecer : include
+        detalharParecer ..> detalharAnaliseReaproveitamento : include
+        detalharParecer ..> solicitarParecerDocente : extends
+
+        docente --> monitorarParecerDocente
+        monitorarParecerDocente ..> pesquisarParecerDocente : include
+        monitorarParecerDocente ..> emitirParecerDocente : extends
+        emitirParecerDocente ..> detalharAnaliseReaproveitamento : include
+    } 
+!endsub
+@enduml

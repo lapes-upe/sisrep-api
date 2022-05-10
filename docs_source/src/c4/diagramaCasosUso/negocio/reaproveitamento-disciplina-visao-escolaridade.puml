@@ -1,0 +1,43 @@
+@startuml Escolaridade 
+!startsub ESCO
+    left to right direction
+    rectangle Escolaridade {
+        "Escolaridade" as escolaridade    
+        
+        (Listar Solicitaçoes de Reaproveitamento) as listarSolicitacao
+        (Receber Solicitação de Reaproveitamento) as receberSolicitacao
+        (Pesquisar Solicitação de Reaproveitamento) as pesquisarSolicitacao
+        (Detalhar Solicitação de Reaproveitamento) as detalharSolicitacao
+        (Monitorar Solicitação de Reaproveitamento) as monitorarSolicitacao
+        (Analisar Documentacao de Solicitaçoes de Reaproveitamento) as analisarDocumentacao
+        (Solicitar Revisão de Solicitaçoes de Reaproveitamento) as solicitarRevisao
+
+        escolaridade -left-> listarSolicitacao
+        escolaridade -up-> monitorarSolicitacao
+        
+        pesquisarSolicitacao .up.> listarSolicitacao  : includes
+        detalharSolicitacao <.up. listarSolicitacao  : extends
+        detalharSolicitacao <.. analisarDocumentacao : includes
+        detalharSolicitacao <.. solicitarRevisao : extends
+
+        (Listar Analises de Reaproveitamento) as listarAnalisesReaproveitamento
+        (Analisar Reaproveitamento) as processarAnaliseReaproveitamento
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+        (Pesquisar Analise de Reaproveitamento) as pesquisarAnaliseReaproveitamento
+        (Solicitar Parecer de Reaproveitamento) as solicitarParecer
+        (Consultar Pareceres de Reaproveitamento) as consultarParecer
+        (Monitorar Analise de Reaproveitamento) as monitorarAnalise
+
+        escolaridade --> listarAnalisesReaproveitamento
+        escolaridade -up-> monitorarAnalise
+
+        listarAnalisesReaproveitamento ..> processarAnaliseReaproveitamento : extends
+        detalharAnaliseReaproveitamento <.up. listarAnalisesReaproveitamento  : extends
+        detalharAnaliseReaproveitamento ..> consultarParecer : includes
+        pesquisarAnaliseReaproveitamento <.right. listarAnalisesReaproveitamento  : extends
+        processarAnaliseReaproveitamento <.. solicitarParecer : extends
+        processarAnaliseReaproveitamento ..> consultarParecer : includes
+        
+    }
+!endsub
+@enduml
