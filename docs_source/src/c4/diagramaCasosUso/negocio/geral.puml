@@ -1,52 +1,9 @@
-@startuml Geral 
-left to right direction
+@startuml Visão Geral
+    title <b>Visão Geral do Processo de Reaproveitamento de Disciplinas</b>
 
-rectangle Aluno {
-    "Aluno" as aluno
-
-    (Solicitar formulário à UPE) as solicitacaoFormularioUPE
-    (Solicitar documentos à IES) as soliciticaoDocumentoIES
-    (Preencher formulário) as preencherFormularioUPE
-    (Entregar documentos à UPE) as entregarDoc
-
-    aluno --> solicitacaoFormularioUPE
-    solicitacaoFormularioUPE ..> preencherFormularioUPE : include
-    aluno --> soliciticaoDocumentoIES
-    aluno --> entregarDoc
+    !includesub reaproveitamento-disciplina-visao-discente.puml!DISC
+    !includesub reaproveitamento-disciplina-visao-escolaridade.puml!ESCO
+    !includesub reaproveitamento-disciplina-visao-coordenacao.puml!COORD
     
-}
-
-rectangle IES {
-    "IES" as ies    
-    (Receber solicitacao do aluno) as receberSolicitacaoAluno
-    (Validar documentos) as disponibilizarDocumentos
-    (Resolver pendências) as resolverPendencias
-    (Conferir documentos) as conferirDocumentos
-    (Entregar documentos ao aluno) as entregarDocumentos
-
-    ies --> receberSolicitacaoAluno
-    ies --> disponibilizarDocumentos
-    disponibilizarDocumentos <.. resolverPendencias : extends
-    disponibilizarDocumentos ..> conferirDocumentos : includes
-    ies --> entregarDocumentos
-}
-
-rectangle UPE {
-    "UPE" as upe
-    (Receber solicitacao do aluno) as receberSolicitacao
-    (Entregar formulário) as entregarForm
-    (Receber artefatos) as receberArtefatos
-    (Validar documentos) as validarDocumentos
-    (Aprovar solicitação) as aprovarSolicitacao
-    (Indeferir solicitação) as negarSolicitacao
-    (Reaproveitar disciplina) as reaproveitarDisciplina
-
-    upe --> receberSolicitacao
-    receberSolicitacao ..> entregarForm : include
-    upe --> receberArtefatos
-    upe --> validarDocumentos
-    validarDocumentos <.. aprovarSolicitacao : extends
-    aprovarSolicitacao ..> reaproveitarDisciplina : includes
-    validarDocumentos <.. negarSolicitacao : extends
-} 
 @enduml
+
