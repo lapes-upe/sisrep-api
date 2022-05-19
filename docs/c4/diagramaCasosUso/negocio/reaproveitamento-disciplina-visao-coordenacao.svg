@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="578px" preserveAspectRatio="none" style="width:2063px;height:578px;background:#FFFFFF;" version="1.1" viewBox="0 0 2063 578" width="2063px" zoomAndPan="magnify"><defs/><g><!--MD5=[96b09d512c6a533aed0b1b8a51f3e70d]
+cluster Coordenações--><g id="cluster_Coordenações"><rect height="565" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="2050" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="115" x="974.5" y="21.9951">Coordenações</text></g><!--MD5=[e59e8ef62fe6c335c4b573f8dd8d949e]
+entity coordenacao--><g id="elem_coordenacao"><ellipse cx="820" cy="50.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M820,58.5 L820,85.5 M807,66.5 L833,66.5 M820,85.5 L807,100.5 M820,85.5 L833,100.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="774.5" y="114.9951">Coordenador</text></g><!--MD5=[65b27f256e065fd1839f63b8d730a439]
+entity docente--><g id="elem_docente"><ellipse cx="53" cy="460.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M53,468.5 L53,495.5 M40,476.5 L66,476.5 M53,495.5 L40,510.5 M53,495.5 L66,510.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="23" y="524.9951">Docente</text></g><g id="elem_monitorarParecer"><ellipse cx="1330.2535" cy="233.9507" fill="#F1F1F1" rx="200.2535" ry="42.4507" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="374" x="1143.2535" y="236.7974">Monitorar Solicitação de Parecer de Reaproveitamento</text></g><g id="elem_pesquisarParecer"><ellipse cx="1839.7214" cy="234.2443" fill="#F1F1F1" rx="201.7214" ry="42.7443" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="377" x="1651.2214" y="237.091">Pesquisar Solicitação de Parecer de Reaproveitamento</text></g><g id="elem_detalharParecer"><ellipse cx="819.8303" cy="404.7661" fill="#F1F1F1" rx="196.8303" ry="41.7661" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="367" x="636.3303" y="407.6127">Detalhar Solicitação de Parecer de Reaproveitamento</text></g><g id="elem_solicitarParecerDocente"><ellipse cx="1330.3278" cy="380.8656" fill="#F1F1F1" rx="177.3278" ry="37.8656" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="327" x="1166.8278" y="383.7122">Solicitar Parecer Docente de Reaproveitamento</text></g><g id="elem_emitirParecer"><ellipse cx="820.2348" cy="298.247" fill="#F1F1F1" rx="139.2348" ry="30.247" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="696.2348" y="301.0936">Emitir Parecer de Reaproveitamento</text></g><g id="elem_monitorarParecerDocente"><ellipse cx="327.1671" cy="490.0334" fill="#F1F1F1" rx="183.1671" ry="39.0334" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="339" x="157.6671" y="492.8801">Monitorar Parecer Docente de Reaproveitamento</text></g><g id="elem_emitirParecerDocente"><ellipse cx="820.0447" cy="518.9089" fill="#F1F1F1" rx="170.0447" ry="36.4089" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="312" x="664.0447" y="521.7556">Emitir Parecer Docente de Reaproveitamento</text></g><g id="elem_pesquisarParecerDocente"><ellipse cx="820.1285" cy="192.8257" fill="#F1F1F1" rx="184.6285" ry="39.3257" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="649.1285" y="195.6724">Pesquisar Parecer Docente de Reaproveitamento</text></g><g id="elem_detalharAnaliseReaproveitamento"><ellipse cx="1330.3886" cy="485.7777" fill="#F1F1F1" rx="146.8886" ry="31.7777" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="1198.3886" y="488.6244">Detalhar Analise de Reaproveitamento</text></g><!--MD5=[722d33ddb51a057df96f0b85f680fb64]
+link coordenacao to monitorarParecer--><g id="link_coordenacao_monitorarParecer"><path d="M865.86,92.46 C905.64,103.6 965.3,120.51 1017,136 C1082.43,155.6 1155.26,178.39 1214.14,197.05 " fill="none" id="coordenacao-to-monitorarParecer" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1219.07,198.61,1211.7016,192.0749,1214.3042,197.0975,1209.2817,199.7001,1219.07,198.61" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[99098e1312bece60cf0136fd61f6507f]
+reverse link emitirParecer to monitorarParecer--><g id="link_emitirParecer_monitorarParecer"><path d="M945.5,282.33 C1009.39,274.29 1088.21,264.37 1157.78,255.61 " fill="none" id="emitirParecer-backto-monitorarParecer" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="940.54,282.95,949.9707,285.7895,945.5005,282.3228,948.9672,277.8527,940.54,282.95" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1048" y="261.0669">extends</text></g><!--MD5=[1e14c0c314f6a66f20d95253941b30e7]
+reverse link emitirParecer to detalharAnaliseReaproveitamento--><g id="link_emitirParecer_detalharAnaliseReaproveitamento"><path d="M946.5,283.4 C999.4,284.01 1058.26,294.51 1100,330 C1137.3,361.71 1094.86,401.91 1130,436 C1148.2,453.65 1171.64,465.36 1196.03,473.06 " fill="none" id="emitirParecer-backto-detalharAnaliseReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="941.4,283.38,950.377,287.4314,946.3999,283.4086,950.4227,279.4315,941.4,283.38" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1048" y="297.0669">extends</text></g><!--MD5=[46bf045c67155904ed8032b0d4f8a290]
+reverse link detalharParecer to monitorarParecer--><g id="link_detalharParecer_monitorarParecer"><path d="M1000.61,384.6 C1034.67,376.78 1069.24,365.96 1100,351 C1115.87,343.28 1115.16,334.54 1130,325 C1162.03,304.42 1199.48,286.04 1233.22,271.27 " fill="none" id="detalharParecer-backto-monitorarParecer" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="995.59,385.73,1005.25,387.6494,1000.4672,384.6287,1003.4879,379.8459,995.59,385.73" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1048" y="347.0669">extends</text></g><!--MD5=[eb9922ee6aae2a102718d9efce1a99f3]
+link monitorarParecer to pesquisarParecer--><g id="link_monitorarParecer_pesquisarParecer"><path d="M1531.15,234 C1564.43,234 1599,234 1632.43,234 " fill="none" id="monitorarParecer-to-pesquisarParecer" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1637.78,234,1628.78,230,1632.78,234,1628.78,238,1637.78,234" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="1562" y="230.0669">include</text></g><!--MD5=[5e99ce64fee3363f863fa7524e97ee9e]
+link detalharParecer to detalharAnaliseReaproveitamento--><g id="link_detalharParecer_detalharAnaliseReaproveitamento"><path d="M978.41,430.07 C1051.61,441.73 1137.4,455.4 1205.86,466.3 " fill="none" id="detalharParecer-to-detalharAnaliseReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1211.17,467.15,1202.912,461.783,1206.2324,466.3628,1201.6525,469.6832,1211.17,467.15" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="1051" y="440.0669">include</text></g><!--MD5=[9074d93b7826790edd3cb80878d367c2]
+link detalharParecer to solicitarParecerDocente--><g id="link_detalharParecer_solicitarParecerDocente"><path d="M1015.45,410.54 C1043.83,410.35 1072.68,409.6 1100,408 C1124.22,406.58 1149.8,404.32 1174.75,401.71 " fill="none" id="detalharParecer-to-solicitarParecerDocente" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1179.73,401.18,1170.3575,398.154,1174.758,401.7086,1171.2033,406.1091,1179.73,401.18" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1048" y="404.0669">extends</text></g><!--MD5=[7717e2bbaf54ed904153c61b184af4f3]
+link docente to monitorarParecerDocente--><g id="link_docente_monitorarParecerDocente"><path d="M83.11,490 C97.95,490 117.39,490 138.81,490 " fill="none" id="docente-to-monitorarParecerDocente" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="143.99,490,134.99,486,138.99,490,134.99,494,143.99,490" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[450232c273fec2e65f3ce5eb4fbc2ebc]
+link monitorarParecerDocente to pesquisarParecerDocente--><g id="link_monitorarParecerDocente_pesquisarParecerDocente"><path d="M364.93,451.49 C417.53,398.76 519.21,304.43 623,250 C643.13,239.44 665.48,230.6 687.67,223.27 " fill="none" id="monitorarParecerDocente-to-pesquisarParecerDocente" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="692.71,221.63,682.915,220.6017,687.9539,223.1725,685.383,228.2114,692.71,221.63" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="544" y="267.0669">include</text></g><!--MD5=[640f2ad13b1c2cbf8109a8998cca4c8d]
+link monitorarParecerDocente to emitirParecerDocente--><g id="link_monitorarParecerDocente_emitirParecerDocente"><path d="M503.53,500.37 C551.47,503.2 603.3,506.26 650.82,509.07 " fill="none" id="monitorarParecerDocente-to-emitirParecerDocente" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="656,509.37,647.2565,504.8367,651.009,509.0697,646.776,512.8222,656,509.37" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="541" y="499.0669">extends</text></g><!--MD5=[23acc5c021fc4704e65c2b032d8f290c]
+link emitirParecerDocente to detalharAnaliseReaproveitamento--><g id="link_emitirParecerDocente_detalharAnaliseReaproveitamento"><path d="M987.5,525.61 C1024.58,525.74 1063.66,524.83 1100,522 C1137.17,519.1 1177.43,513.6 1213.69,507.76 " fill="none" id="emitirParecerDocente-to-detalharAnaliseReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1219.02,506.89,1209.4954,504.3837,1214.0846,507.6911,1210.7772,512.2803,1219.02,506.89" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="1051" y="518.0669">include</text></g><!--MD5=[5525bd621eb46b91bfaec45f4fb383f6]
+@startuml Coordenação
+!startsub COORD
+    left to right direction
+    rectangle Coordenações {
+        "Coordenador" as coordenacao
+        "Docente" as docente
+        (Monitorar Solicitação de Parecer de Reaproveitamento) as monitorarParecer
+        (Pesquisar Solicitação de Parecer de Reaproveitamento) as pesquisarParecer
+        (Detalhar Solicitação de Parecer de Reaproveitamento) as detalharParecer
+        (Solicitar Parecer Docente de Reaproveitamento) as solicitarParecerDocente
+        (Emitir Parecer de Reaproveitamento) as emitirParecer
+
+        (Monitorar Parecer Docente de Reaproveitamento) as monitorarParecerDocente
+        (Emitir Parecer Docente de Reaproveitamento) as emitirParecerDocente
+        (Pesquisar Parecer Docente de Reaproveitamento) as pesquisarParecerDocente
+
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+
+        coordenacao - -> monitorarParecer
+        emitirParecer <.. monitorarParecer : extends
+        emitirParecer <.. detalharAnaliseReaproveitamento : extends
+        detalharParecer <.. monitorarParecer : extends
+        monitorarParecer ..> pesquisarParecer : include
+        detalharParecer ..> detalharAnaliseReaproveitamento : include
+        detalharParecer ..> solicitarParecerDocente : extends
+
+        docente - -> monitorarParecerDocente
+        monitorarParecerDocente ..> pesquisarParecerDocente : include
+        monitorarParecerDocente ..> emitirParecerDocente : extends
+        emitirParecerDocente ..> detalharAnaliseReaproveitamento : include
+    } 
+!endsub
+@enduml
+
+@startuml Coordenação
+    left to right direction
+    rectangle Coordenações {
+        "Coordenador" as coordenacao
+        "Docente" as docente
+        (Monitorar Solicitação de Parecer de Reaproveitamento) as monitorarParecer
+        (Pesquisar Solicitação de Parecer de Reaproveitamento) as pesquisarParecer
+        (Detalhar Solicitação de Parecer de Reaproveitamento) as detalharParecer
+        (Solicitar Parecer Docente de Reaproveitamento) as solicitarParecerDocente
+        (Emitir Parecer de Reaproveitamento) as emitirParecer
+
+        (Monitorar Parecer Docente de Reaproveitamento) as monitorarParecerDocente
+        (Emitir Parecer Docente de Reaproveitamento) as emitirParecerDocente
+        (Pesquisar Parecer Docente de Reaproveitamento) as pesquisarParecerDocente
+
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+
+        coordenacao - -> monitorarParecer
+        emitirParecer <.. monitorarParecer : extends
+        emitirParecer <.. detalharAnaliseReaproveitamento : extends
+        detalharParecer <.. monitorarParecer : extends
+        monitorarParecer ..> pesquisarParecer : include
+        detalharParecer ..> detalharAnaliseReaproveitamento : include
+        detalharParecer ..> solicitarParecerDocente : extends
+
+        docente - -> monitorarParecerDocente
+        monitorarParecerDocente ..> pesquisarParecerDocente : include
+        monitorarParecerDocente ..> emitirParecerDocente : extends
+        emitirParecerDocente ..> detalharAnaliseReaproveitamento : include
+    } 
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 13:10:57 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>

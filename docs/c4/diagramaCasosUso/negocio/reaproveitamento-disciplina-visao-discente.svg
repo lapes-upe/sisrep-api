@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="401px" preserveAspectRatio="none" style="width:1273px;height:401px;background:#FFFFFF;" version="1.1" viewBox="0 0 1273 401" width="1273px" zoomAndPan="magnify"><defs/><g><!--MD5=[de4851d08910b1ff0ebb9268075a9b79]
+cluster Discente--><g id="cluster_Discente"><rect height="388" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="1260" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="69" x="602.5" y="21.9951">Discente</text></g><!--MD5=[23f93e0cdbac79b764b6b1e80a89cb93]
+entity aluno--><g id="elem_aluno"><ellipse cx="109" cy="171.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M109,179.5 L109,206.5 M96,187.5 L122,187.5 M109,206.5 L96,221.5 M109,206.5 L122,221.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="78" y="235.9951">Discente</text></g><g id="elem_preencherRequerimento"><ellipse cx="407.4911" cy="118.8982" fill="#F1F1F1" rx="104.9911" ry="23.3982" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="319.9911" y="121.7449">Preencher Requerimento</text></g><g id="elem_listarRequerimentos"><ellipse cx="407.3318" cy="283.8664" fill="#F1F1F1" rx="92.3318" ry="20.8664" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="333.8318" y="286.713">Listar Requerimentos</text></g><g id="elem_excluirRequerimento"><ellipse cx="734.8318" cy="357.8664" fill="#F1F1F1" rx="92.3318" ry="20.8664" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="661.3318" y="360.713">Excluir Requerimento</text></g><g id="elem_solicitaReaproveitamento"><ellipse cx="735.1316" cy="118.2263" fill="#F1F1F1" rx="109.1316" ry="24.2263" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="643.1316" y="121.073">Solicitar Reaproveitamento</text></g><g id="elem_anexarDocumento"><ellipse cx="109.1635" cy="85.1327" fill="#F1F1F1" rx="86.1635" ry="19.6327" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="42.6635" y="87.9794">Anexar Documento</text></g><g id="elem_monitorarRequerimento"><ellipse cx="407.4496" cy="200.9899" fill="#F1F1F1" rx="105.4496" ry="23.4899" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="319.4496" y="203.8366">Monitorar Requerimentos</text></g><g id="elem_detalharRequerimento"><ellipse cx="735.1147" cy="199.1229" fill="#F1F1F1" rx="98.6147" ry="22.1229" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="654.6147" y="201.9696">Detalhar Requerimento</text></g><g id="elem_pesquisarRequerimento"><ellipse cx="735.1608" cy="279.0322" fill="#F1F1F1" rx="103.1608" ry="23.0322" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="649.6608" y="281.8788">Pesquisar Requerimento</text></g><g id="elem_revisarRequerimento"><ellipse cx="1103.9721" cy="86.7944" fill="#F1F1F1" rx="134.4721" ry="29.2944" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="984.9721" y="89.6411">Revisar Pendências Requerimento</text></g><g id="elem_detalharAnaliseReaproveitamento"><ellipse cx="1103.8886" cy="198.7777" fill="#F1F1F1" rx="146.8886" ry="31.7777" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="971.8886" y="201.6244">Detalhar Analise de Reaproveitamento</text></g><!--MD5=[3e520631a16103735040c2f4459d2c39]
+link aluno to preencherRequerimento--><g id="link_aluno_preencherRequerimento"><path d="M140.06,192.69 C185.62,180.09 273.43,155.8 335.78,138.56 " fill="none" id="aluno-to-preencherRequerimento" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="340.6,137.23,330.8562,135.7952,335.7838,138.5734,333.0056,143.501,340.6,137.23" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[574966e3f36bc52c9336239a81005077]
+link aluno to monitorarRequerimento--><g id="link_aluno_monitorarRequerimento"><path d="M140.06,201 C176.72,201 240.73,201 296.83,201 " fill="none" id="aluno-to-monitorarRequerimento" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="301.88,201,292.88,197,296.88,201,292.88,205,301.88,201" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[14dfe9f1c29eb6e759adae22c142143e]
+link aluno to listarRequerimentos--><g id="link_aluno_listarRequerimentos"><path d="M140.06,209.42 C187.56,222.71 280.97,248.86 343.59,266.39 " fill="none" id="aluno-to-listarRequerimentos" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="348.42,267.74,340.8429,261.4481,343.6076,266.3834,338.6723,269.148,348.42,267.74" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[297970befe2678eebed90ef1811287c7]
+link preencherRequerimento to solicitaReaproveitamento--><g id="link_preencherRequerimento_solicitaReaproveitamento"><path d="M512.64,119.13 C539.77,119.13 568.98,119.1 596,119 C604.04,118.97 612.33,118.93 620.69,118.89 " fill="none" id="preencherRequerimento-to-solicitaReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="625.9,118.86,616.8773,114.9115,620.9001,118.8886,616.923,122.9114,625.9,118.86" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="544" y="115.0669">extends</text></g><!--MD5=[f2fb3038aab4ad20378bcb77ef956032]
+reverse link anexarDocumento to preencherRequerimento--><g id="link_anexarDocumento_preencherRequerimento"><path d="M191.04,94.29 C229.01,98.65 274.45,103.86 313.78,108.37 " fill="none" id="anexarDocumento-backto-preencherRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="185.97,93.71,194.4544,98.7116,190.9373,94.281,195.3679,90.7639,185.97,93.71" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="226" y="95.0669">include</text></g><!--MD5=[c11af50ecb8dd34eccb269efe61c47c8]
+reverse link anexarDocumento to revisarRequerimento--><g id="link_anexarDocumento_revisarRequerimento"><path d="M192.02,76.19 C203.09,75.28 214.32,74.51 225,74 C245.87,73 251.11,73.96 272,74 C526.22,74.44 589.84,70.16 844,76 C885.84,76.96 931.47,78.68 972.6,80.47 " fill="none" id="anexarDocumento-backto-revisarRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="186.94,76.62,196.2411,79.8588,191.9227,76.2048,195.5767,71.8864,186.94,76.62" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="544" y="69.0669">extends</text></g><!--MD5=[e149b7154462a5d2ebfe676a9df89f6d]
+link monitorarRequerimento to detalharRequerimento--><g id="link_monitorarRequerimento_detalharRequerimento"><path d="M513.28,200.36 C551.08,200.12 593.67,199.86 631.29,199.63 " fill="none" id="monitorarRequerimento-to-detalharRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="636.32,199.6,627.2973,195.6515,631.3201,199.6286,627.343,203.6514,636.32,199.6" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="544" y="196.0669">extends</text></g><!--MD5=[3a002cb8db56e53478e2761dd980e858]
+link detalharRequerimento to revisarRequerimento--><g id="link_detalharRequerimento_revisarRequerimento"><path d="M794.15,181.25 C854.95,162.7 950.9,133.42 1019.72,112.41 " fill="none" id="detalharRequerimento-to-revisarRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1024.63,110.92,1014.8519,109.7416,1019.8508,112.3894,1017.203,117.3883,1024.63,110.92" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="875" y="139.0669">extends</text></g><!--MD5=[ff8151b038706487e5b1f1a5652a6857]
+link listarRequerimentos to detalharRequerimento--><g id="link_listarRequerimentos_detalharRequerimento"><path d="M468.96,268.21 C524.67,253.67 607.25,232.1 665.4,216.91 " fill="none" id="listarRequerimentos-to-detalharRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="670.25,215.65,660.5325,214.0466,665.4113,216.9098,662.5482,221.7886,670.25,215.65" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="544" y="233.0669">extends</text></g><!--MD5=[dc8f0e45d354118f5249a770537758fb]
+link listarRequerimentos to excluirRequerimento--><g id="link_listarRequerimentos_excluirRequerimento"><path d="M471.4,299.2 C493.96,304.59 519.6,310.64 543,316 C582.27,324.99 626.18,334.67 661.98,342.47 " fill="none" id="listarRequerimentos-to-excluirRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="667.2,343.6,659.2657,337.765,662.3161,342.529,657.5521,345.5793,667.2,343.6" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="544" y="312.0669">extends</text></g><!--MD5=[17c91b4fc090be155595cb96aee07b81]
+link listarRequerimentos to pesquisarRequerimento--><g id="link_listarRequerimentos_pesquisarRequerimento"><path d="M497.83,288.54 C512.9,289.15 528.39,289.67 543,290 C566.55,290.53 572.46,290.94 596,290 C608.3,289.51 621.19,288.78 633.96,287.92 " fill="none" id="listarRequerimentos-to-pesquisarRequerimento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="639.04,287.57,629.7874,284.1951,634.0517,287.9121,630.3347,292.1763,639.04,287.57" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="547" y="286.0669">include</text></g><!--MD5=[2625fec057042f2564a2e44daaf1a41a]
+link detalharRequerimento to detalharAnaliseReaproveitamento--><g id="link_detalharRequerimento_detalharAnaliseReaproveitamento"><path d="M833.87,199 C869.94,199 911.7,199 951.41,199 " fill="none" id="detalharRequerimento-to-detalharAnaliseReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="956.74,199,947.74,195,951.74,199,947.74,203,956.74,199" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="875" y="195.0669">extends</text></g><!--MD5=[4a116626b62a4bf22381888fd358a37d]
+@startuml Discente 
+!startsub DISC
+
+    left to right direction
+    rectangle Discente {
+        "Discente" as aluno
+
+        (Preencher Requerimento) as preencherRequerimento
+        (Listar Requerimentos) as listarRequerimentos
+        (Excluir Requerimento) as excluirRequerimento
+        (Solicitar Reaproveitamento) as solicitaReaproveitamento
+        (Anexar Documento) as anexarDocumento    
+        (Monitorar Requerimentos) as monitorarRequerimento
+        (Detalhar Requerimento) as detalharRequerimento
+        (Pesquisar Requerimento) as pesquisarRequerimento
+        (Revisar Pendências Requerimento) as revisarRequerimento
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+
+        aluno - -> preencherRequerimento
+        aluno - -> monitorarRequerimento
+        aluno - -> listarRequerimentos
+
+        solicitaReaproveitamento <.up. preencherRequerimento  : extends
+        preencherRequerimento .up.> anexarDocumento : include
+        revisarRequerimento .left.> anexarDocumento : extends
+        monitorarRequerimento ..> detalharRequerimento  : extends
+        detalharRequerimento ..> revisarRequerimento  : extends
+        listarRequerimentos ..> detalharRequerimento  : extends
+        listarRequerimentos ..> excluirRequerimento  : extends
+        listarRequerimentos ..> pesquisarRequerimento  : include
+        detalharRequerimento ..> detalharAnaliseReaproveitamento  : extends
+    }
+    
+!endsub
+@enduml
+
+@startuml Discente 
+
+    left to right direction
+    rectangle Discente {
+        "Discente" as aluno
+
+        (Preencher Requerimento) as preencherRequerimento
+        (Listar Requerimentos) as listarRequerimentos
+        (Excluir Requerimento) as excluirRequerimento
+        (Solicitar Reaproveitamento) as solicitaReaproveitamento
+        (Anexar Documento) as anexarDocumento    
+        (Monitorar Requerimentos) as monitorarRequerimento
+        (Detalhar Requerimento) as detalharRequerimento
+        (Pesquisar Requerimento) as pesquisarRequerimento
+        (Revisar Pendências Requerimento) as revisarRequerimento
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+
+        aluno - -> preencherRequerimento
+        aluno - -> monitorarRequerimento
+        aluno - -> listarRequerimentos
+
+        solicitaReaproveitamento <.up. preencherRequerimento  : extends
+        preencherRequerimento .up.> anexarDocumento : include
+        revisarRequerimento .left.> anexarDocumento : extends
+        monitorarRequerimento ..> detalharRequerimento  : extends
+        detalharRequerimento ..> revisarRequerimento  : extends
+        listarRequerimentos ..> detalharRequerimento  : extends
+        listarRequerimentos ..> excluirRequerimento  : extends
+        listarRequerimentos ..> pesquisarRequerimento  : include
+        detalharRequerimento ..> detalharAnaliseReaproveitamento  : extends
+    }
+    
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 13:10:57 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>

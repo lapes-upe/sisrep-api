@@ -1,0 +1,20 @@
+@startuml ControleAcesso
+    
+    abstract class "Entidade" as entidade {
+        - Long id
+        - LocalDateTime dataCriacao
+        - LocalDateTime dataAlteracao
+    }
+
+    class "Usuario" as usuario {
+
+    }
+
+    class "Perfil" as perfil {
+
+    }
+
+    entidade <|-- usuario
+    entidade <|-- perfil
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml cadastro
+skinparam Style strictuml
+
+(Manter Cadastro) as cadastrar
+(Login) as login
+(Logout) as logout
+(Alternar Usuario) as trocar
+
+(Manter Usuarios) as manterUsuarios 
+(Desbloquear Usuario) as desbloquearUsuarios
+(Bloquear Usuario) as bloquearUsuarios
+
+:Usuario: as user
+:Administrador:  as admin
+
+user --> cadastrar
+user --> login
+user --> logout
+user --> trocar
+
+admin --> manterUsuarios
+admin ->desbloquearUsuarios
+admin ->bloquearUsuarios
+
+@enduml

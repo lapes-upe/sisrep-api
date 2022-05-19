@@ -1,6 +1,6 @@
-# assets
+# c4
 
-`/assets`
+`/c4`
 
 * [Overview](../README.md)
   * [C2 - Sistema](../C2%20-%20Sistema/README.md)
@@ -9,8 +9,8 @@
     * [C3 - Backend](../C3%20-%20Componentes/C3%20-%20Backend/README.md)
   * [Implantação](../Implanta%C3%A7%C3%A3o/README.md)
   * [Requisitos do Sistema](../Requisitos%20do%20Sistema/README.md)
-  * [**assets**](../assets/README.md)
-  * [c4](../c4/README.md)
+  * [assets](../assets/README.md)
+  * [**c4**](../c4/README.md)
     * [diagramaAtividades](../c4/diagramaAtividades/README.md)
       * [autenticacao](../c4/diagramaAtividades/autenticacao/README.md)
       * [negocio](../c4/diagramaAtividades/negocio/README.md)
@@ -24,5 +24,9 @@
 ---
 
 [Overview (up)](../README.md)
+
+- [diagramaAtividades](../c4/diagramaAtividades/README.md)
+
+- [diagramaCasosUso](../c4/diagramaCasosUso/README.md)
 
 ---

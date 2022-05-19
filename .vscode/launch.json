@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SisRepApplication<controleacesso>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.upe.sistemas.sisrep.SisRepApplication",
+            "projectName": "controleacesso",
+            "args": "",
+            "env": {
+                "JDBC_DATABASE_URL": "jdbc:postgresql://localhost:5432/sisrep",
+                "JDBC_DATABASE_USERNAME": "postgres",
+                "JDBC_DATABASE_PASSWORD": "postgres"
+            }
+        }
+    ]
+}

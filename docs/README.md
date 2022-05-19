@@ -1,11 +1,37 @@
 # Overview
 
 * [**Overview**](README.md)
+  * [C2 - Sistema](C2%20-%20Sistema/README.md)
+  * [C3 - Componentes](C3%20-%20Componentes/README.md)
+    * [C3 - API](C3%20-%20Componentes/C3%20-%20API/README.md)
+    * [C3 - Backend](C3%20-%20Componentes/C3%20-%20Backend/README.md)
+  * [Implantação](Implanta%C3%A7%C3%A3o/README.md)
+  * [Requisitos do Sistema](Requisitos%20do%20Sistema/README.md)
   * [assets](assets/README.md)
+  * [c4](c4/README.md)
+    * [diagramaAtividades](c4/diagramaAtividades/README.md)
+      * [autenticacao](c4/diagramaAtividades/autenticacao/README.md)
+      * [negocio](c4/diagramaAtividades/negocio/README.md)
+        * [IESAnterior](c4/diagramaAtividades/negocio/IESAnterior/README.md)
+        * [UPE](c4/diagramaAtividades/negocio/UPE/README.md)
+        * [aluno](c4/diagramaAtividades/negocio/aluno/README.md)
+    * [diagramaCasosUso](c4/diagramaCasosUso/README.md)
+      * [autenticacao](c4/diagramaCasosUso/autenticacao/README.md)
+      * [negocio](c4/diagramaCasosUso/negocio/README.md)
 
 ---
 
+- [C2 - Sistema](C2%20-%20Sistema/README.md)
+
+- [C3 - Componentes](C3%20-%20Componentes/README.md)
+
+- [Implantação](Implanta%C3%A7%C3%A3o/README.md)
+
+- [Requisitos do Sistema](Requisitos%20do%20Sistema/README.md)
+
 - [assets](assets/README.md)
+
+- [c4](c4/README.md)
 
 ---
 
@@ -19,7 +45,7 @@ Aqui você vai encontrar todas as informações básicas sobre o projeto SisPRE 
 
 ---
 
-A resolução [CEPE Nº 035/2016](/assets/resolucao_035_2016.pdf) é o insturmento que normatiza o Processo de Reaproveitamento de Estudos (PRE) nos cursos de graduação no âmbito da Universidade de Pernambuco. Este instrumento de referência tem como base o parecer do CNE/CES(67/2003) e atualiza a resolução CEPE 038/2015.e visa estimular práticas de estudos independentes em busca de uma autonomia intelectual e profissional progressiva do discente.
+A resolução [CEPE Nº 035/2016](../docs/assets/resolucao_035_2016.pdf) é o insturmento que normatiza o Processo de Reaproveitamento de Estudos (PRE) nos cursos de graduação no âmbito da Universidade de Pernambuco. Este instrumento de referência tem como base o parecer do CNE/CES(67/2003) e atualiza a resolução CEPE 038/2015.e visa estimular práticas de estudos independentes em busca de uma autonomia intelectual e profissional progressiva do discente.
 
 ## **O que é o SisPRE?**
 
