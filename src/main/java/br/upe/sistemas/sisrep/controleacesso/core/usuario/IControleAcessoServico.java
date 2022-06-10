@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.controleacesso.core;
+package br.upe.sistemas.sisrep.controleacesso.core.usuario;
 
 import java.util.List;
 

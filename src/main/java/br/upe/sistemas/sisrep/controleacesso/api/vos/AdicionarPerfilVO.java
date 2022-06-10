@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.controleacesso.api;
+package br.upe.sistemas.sisrep.controleacesso.api.vos;
 
 import lombok.Data;
 

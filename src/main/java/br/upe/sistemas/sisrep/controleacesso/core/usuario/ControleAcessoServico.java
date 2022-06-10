@@ -1,7 +1,14 @@
-package br.upe.sistemas.sisrep.controleacesso.core;
+package br.upe.sistemas.sisrep.controleacesso.core.usuario;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import javax.transaction.Transactional;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 @Transactional
 @Slf4j
 @RequiredArgsConstructor
-public class ControleAcessoServico implements IControleAcessoServico {
+public class ControleAcessoServico implements IControleAcessoServico, UserDetailsService {
 
     private final IUsuarioRepositorio usuarioRepo;
     private final IPerfilRepositorio perfilRepo;
@@ -57,6 +64,25 @@ public class ControleAcessoServico implements IControleAcessoServico {
         // TODO: implementar RNs
 
         return this.usuarioRepo.findAll();
+    }
+
+    /**
+     * Fornece ao Spring Security as permissões do usuário.
+     */
+    @Override
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        Usuario usuario = this.usuarioRepo.findByEmail(email);
+
+        if (usuario == null || usuario.getId() == null) {
+            throw new UsernameNotFoundException("Usuário não encontrado no sistema.");
+        }
+
+        Collection<SimpleGrantedAuthority> permissoes = new ArrayList<SimpleGrantedAuthority>();
+
+        usuario.getPerfis()
+                .forEach(perfil -> permissoes.add(new SimpleGrantedAuthority(perfil.getNome())));
+
+        return new User(usuario.getEmail(), usuario.getToken(), permissoes);
     }
 
 }

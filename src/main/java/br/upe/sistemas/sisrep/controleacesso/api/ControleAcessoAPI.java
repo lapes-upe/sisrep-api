@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import br.upe.sistemas.sisrep.controleacesso.core.IControleAcessoServico;
-import br.upe.sistemas.sisrep.controleacesso.core.Perfil;
-import br.upe.sistemas.sisrep.controleacesso.core.Usuario;
+
+import br.upe.sistemas.sisrep.controleacesso.api.vos.AdicionarPerfilVO;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.IControleAcessoServico;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.Perfil;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -48,4 +50,5 @@ public class ControleAcessoAPI {
 
         return ResponseEntity.ok().build();
     }
+    
 }
