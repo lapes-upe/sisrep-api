@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ControleAcessoServico implements IControleAcessoServico, UserDetailsService {
 
     private final IUsuarioRepositorio usuarioRepo;
-    private final IPerfilRepositorio perfilRepo;
+    private final ITipoUsuarioRepositorio perfilRepo;
 
     @Override
     public Usuario salvarUsuario(Usuario usuario) {
