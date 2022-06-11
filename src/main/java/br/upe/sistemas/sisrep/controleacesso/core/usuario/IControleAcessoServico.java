@@ -5,7 +5,7 @@ import java.util.List;
 public interface IControleAcessoServico {
     Usuario salvarUsuario(Usuario usuario);
 
-    TipoUsuario salvarPerfil(TipoUsuario tipoUsuario);
+    Perfil salvarPerfil(Perfil perfil);
 
     void adicionarPerfilAoUsuario(String email, String perfil);
 

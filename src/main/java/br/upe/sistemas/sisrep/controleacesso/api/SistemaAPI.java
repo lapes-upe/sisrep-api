@@ -45,8 +45,8 @@ public class SistemaAPI {
     Usuario usuario = ctrlAcessoServico.buscarUsuario(email);
     ResponseEntity<List<PerfilUsuarioVO>> retorno = null;
 
-    List<PerfilUsuarioVO> vos = usuario.getPerfis().stream()
-        .map(perfil -> PerfilUsuarioVO.builder().nome(perfil.getNome()).build())
+    List<PerfilUsuarioVO> vos = usuario.getPerfis().stream().map(
+        perfil -> PerfilUsuarioVO.builder().nome(perfil.getNome()).icone(perfil.getIcone()).build())
         .collect(Collectors.toList());
 
     if (vos.isEmpty()) {

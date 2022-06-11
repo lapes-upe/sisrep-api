@@ -31,6 +31,6 @@ public class Usuario extends Entidade {
 
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "usuario_perfil", joinColumns = @JoinColumn(name = "id_usuario"), inverseJoinColumns = @JoinColumn(name = "id_perfil"), schema = "acesso")
-	private List<TipoUsuario> perfis;
+	private List<Perfil> perfis;
 
 }

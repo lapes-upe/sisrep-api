@@ -31,11 +31,11 @@ public class ControleAcessoServico implements IControleAcessoServico, UserDetail
     }
 
     @Override
-    public TipoUsuario salvarPerfil(TipoUsuario tipoUsuario) {
-        log.debug("salvando perfil:" + tipoUsuario);
+    public Perfil salvarPerfil(Perfil perfil) {
+        log.debug("salvando perfil:" + perfil);
 
         // TODO: implementar RNs
-        return this.perfilRepo.save(tipoUsuario);
+        return this.perfilRepo.save(perfil);
     }
 
     @Override
@@ -44,8 +44,8 @@ public class ControleAcessoServico implements IControleAcessoServico, UserDetail
 
         // TODO: implementar RNs
         Usuario usuario = this.usuarioRepo.findByNome(email);
-        TipoUsuario tipoUsuario = this.perfilRepo.findByNome(nomePerfil);
-        usuario.getPerfis().add(tipoUsuario);
+        Perfil perfil = this.perfilRepo.findByNome(nomePerfil);
+        usuario.getPerfis().add(perfil);
     }
 
     @Override
