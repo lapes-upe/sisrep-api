@@ -12,7 +12,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import br.upe.sistemas.sisrep.controleacesso.api.vos.AdicionarPerfilVO;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.IControleAcessoServico;
-import br.upe.sistemas.sisrep.controleacesso.core.usuario.Perfil;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.TipoUsuario;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 import lombok.RequiredArgsConstructor;
 
@@ -37,11 +37,11 @@ public class ControleAcessoAPI {
     }
 
     @PostMapping("/perfil/salvar")
-    public ResponseEntity<Perfil> salvarPerfil(@RequestBody Perfil perfil) {
+    public ResponseEntity<TipoUsuario> salvarPerfil(@RequestBody TipoUsuario tipoUsuario) {
         URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path("/api/controleacesso/perfil/salvar").toUriString());
 
-        return ResponseEntity.created(uri).body(ctrlAcessoServico.salvarPerfil(perfil));
+        return ResponseEntity.created(uri).body(ctrlAcessoServico.salvarPerfil(tipoUsuario));
     }
 
     @PostMapping("/perfil/adicionarUsuario")

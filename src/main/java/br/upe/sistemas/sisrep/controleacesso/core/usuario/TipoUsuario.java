@@ -16,7 +16,7 @@ import lombok.experimental.SuperBuilder;
 @Table(name = "perfil", schema = "acesso")
 @SequenceGenerator(name = "sequenciador", sequenceName = "perfil_seq", allocationSize = 1,
         schema = "acesso")
-public class Perfil extends Entidade {
+public class TipoUsuario extends Entidade {
 	
     private String nome;
 }
