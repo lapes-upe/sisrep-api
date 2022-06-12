@@ -29,15 +29,24 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @EqualsAndHashCode(of = {"id", "email"}, callSuper = false)
 @Table(name = "usuario", schema = "acesso")
-@SequenceGenerator(name = "sequenciador", sequenceName = "usuario_seq", allocationSize = 1, schema = "acesso")
+@SequenceGenerator(name = "sequenciador", sequenceName = "usuario_seq", allocationSize = 1,
+    schema = "acesso")
 public class Usuario extends Entidade {
+
+  @Email(message = "O email deve ser válido")
+  private String email;
 
   @NotBlank(message = "O nome é obrigatório")
   @Size(message = "O nome deve ter entre 5 e 200 caracteres", min = 5, max = 200)
   private String nome;
 
-  @Email(message = "O email deve ser válido")
-  private String email;
+  private String endereco;
+
+  private String cidade;
+
+  private String cep;
+
+  private String celular;
 
   @NotBlank(message = "O cpf é obrigatório")
   @CPF(message = "Informe o cpf no formato válido")
@@ -49,7 +58,8 @@ public class Usuario extends Entidade {
   private Boolean ativo;
 
   @NotEmpty(message = "O usuário deve ter ao menos um perfil associado")
-  @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE}, targetEntity = Perfil.class)
+  @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE},
+      targetEntity = Perfil.class)
   @JoinTable(name = "usuario_perfil", joinColumns = @JoinColumn(name = "id_usuario"),
       inverseJoinColumns = @JoinColumn(name = "id_perfil"), schema = "acesso")
   private List<Perfil> perfis;
