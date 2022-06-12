@@ -33,6 +33,8 @@ import lombok.experimental.SuperBuilder;
     schema = "acesso")
 public class Usuario extends Entidade {
 
+  private byte[] foto;
+
   @Email(message = "O email deve ser válido")
   private String email;
 
