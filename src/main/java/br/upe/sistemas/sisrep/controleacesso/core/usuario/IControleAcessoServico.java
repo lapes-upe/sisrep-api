@@ -3,13 +3,24 @@ package br.upe.sistemas.sisrep.controleacesso.core.usuario;
 import java.util.List;
 
 public interface IControleAcessoServico {
-    Usuario salvarUsuario(Usuario usuario);
 
-    Perfil salvarPerfil(Perfil perfil);
+  Usuario incluir(Usuario usuario);
 
-    void adicionarPerfilAoUsuario(String email, String perfil);
+  Usuario alterar(Usuario usuario);
 
-    Usuario buscarUsuario(String email);
+  void excluirUsuario(Long id);
 
-    List<Usuario> listarUsuarios();
+  Usuario buscarUsuarioPorEmail(String email);
+
+  List<Usuario> listarUsuarios();
+
+  Usuario adicionarPerfilAoUsuario(String email, String perfil);
+
+  Perfil incluir(Perfil perfil);
+
+  Perfil alterar(Perfil perfil);
+
+  void excluirPerfil(Long id);
+
+  List<Perfil> listarPerfis();
 }
