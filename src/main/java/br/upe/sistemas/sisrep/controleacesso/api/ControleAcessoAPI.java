@@ -118,9 +118,9 @@ public class ControleAcessoAPI {
   public ResponseEntity<DadosUsuarioVO> obterDadosUsuario(String email) {
     Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(email);
 
-    DadosUsuarioVO vo = DadosUsuarioVO.builder().email(usuario.getEmail()).nome(usuario.getNome())
-        .endereco(usuario.getEndereco()).cidade(usuario.getCidade()).cep(usuario.getCep())
-        .celular(usuario.getCelular()).build();
+    DadosUsuarioVO vo = DadosUsuarioVO.builder().foto(usuario.getFoto()).email(usuario.getEmail())
+        .nome(usuario.getNome()).endereco(usuario.getEndereco()).cidade(usuario.getCidade())
+        .cep(usuario.getCep()).celular(usuario.getCelular()).build();
 
     return ResponseEntity.status(HttpStatus.FOUND).body(vo);
   }

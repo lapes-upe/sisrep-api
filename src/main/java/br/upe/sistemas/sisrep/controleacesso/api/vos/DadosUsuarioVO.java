@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @Builder
 public class DadosUsuarioVO {
+  private byte[] foto;
   private String email;
   private String nome;
   private String endereco;
