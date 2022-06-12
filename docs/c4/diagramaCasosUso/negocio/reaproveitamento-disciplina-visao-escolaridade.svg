@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="462px" preserveAspectRatio="none" style="width:2175px;height:462px;background:#FFFFFF;" version="1.1" viewBox="0 0 2175 462" width="2175px" zoomAndPan="magnify"><defs/><g><!--MD5=[50875174547eaddaa26024cb4eb3ad43]
+cluster Escolaridade--><g id="cluster_Escolaridade"><rect height="449" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="2162" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="100" x="1038" y="21.9951">Escolaridade</text></g><!--MD5=[b14a00f792c99cb1ea4d3ac7caf47d49]
+entity escolaridade--><g id="elem_escolaridade"><ellipse cx="560" cy="136.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M560,144.5 L560,171.5 M547,152.5 L573,152.5 M560,171.5 L547,186.5 M560,171.5 L573,186.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="516" y="200.9951">Escolaridade</text></g><g id="elem_listarSolicitacao"><ellipse cx="560.1716" cy="295.8343" fill="#F1F1F1" rx="152.1716" ry="32.8343" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="275" x="422.6716" y="298.681">Listar Solicitaçoes de Reaproveitamento</text></g><g id="elem_receberSolicitacao"><ellipse cx="184.9172" cy="374.1834" fill="#F1F1F1" rx="158.9172" ry="34.1834" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="40.4172" y="377.0301">Receber Solicitação de Reaproveitamento</text></g><g id="elem_pesquisarSolicitacao"><ellipse cx="989.2652" cy="400.053" fill="#F1F1F1" rx="163.2652" ry="35.053" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="298" x="840.2652" y="402.8997">Pesquisar Solicitação de Reaproveitamento</text></g><g id="elem_detalharSolicitacao"><ellipse cx="989.4346" cy="296.0869" fill="#F1F1F1" rx="158.4346" ry="34.0869" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="288" x="845.4346" y="298.9336">Detalhar Solicitação de Reaproveitamento</text></g><g id="elem_monitorarSolicitacao"><ellipse cx="184.8149" cy="219.763" fill="#F1F1F1" rx="161.8149" ry="34.763" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="37.3149" y="222.6097">Monitorar Solicitação de Reaproveitamento</text></g><g id="elem_analisarDocumentacao"><ellipse cx="1491.7745" cy="391.8549" fill="#F1F1F1" rx="224.7745" ry="47.3549" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="424" x="1279.7745" y="394.7016">Analisar Documentacao de Solicitaçoes de Reaproveitamento</text></g><g id="elem_solicitarRevisao"><ellipse cx="1491.7751" cy="266.755" fill="#F1F1F1" rx="199.2751" ry="42.255" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="372" x="1305.7751" y="269.6017">Solicitar Revisão de Solicitaçoes de Reaproveitamento</text></g><g id="elem_listarAnalisesReaproveitamento"><ellipse cx="989.6894" cy="78.9379" fill="#F1F1F1" rx="140.1894" ry="30.4379" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="864.6894" y="81.7846">Listar Analises de Reaproveitamento</text></g><g id="elem_processarAnaliseReaproveitamento"><ellipse cx="1492.1316" cy="165.2263" fill="#F1F1F1" rx="109.1316" ry="24.2263" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="1400.1316" y="168.073">Analisar Reaproveitamento</text></g><g id="elem_detalharAnaliseReaproveitamento"><ellipse cx="1491.8886" cy="73.7777" fill="#F1F1F1" rx="146.8886" ry="31.7777" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="1359.8886" y="76.6244">Detalhar Analise de Reaproveitamento</text></g><g id="elem_pesquisarAnaliseReaproveitamento"><ellipse cx="989.6907" cy="194.2381" fill="#F1F1F1" rx="151.6907" ry="32.7381" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="852.6907" y="197.0848">Pesquisar Analise de Reaproveitamento</text></g><g id="elem_solicitarParecer"><ellipse cx="1991.9091" cy="188.1818" fill="#F1F1F1" rx="146.4091" ry="31.6818" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="1860.4091" y="191.0285">Solicitar Parecer de Reaproveitamento</text></g><g id="elem_consultarParecer"><ellipse cx="1991.8486" cy="82.0697" fill="#F1F1F1" rx="160.8486" ry="34.5697" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="1845.3486" y="84.9164">Consultar Pareceres de Reaproveitamento</text></g><g id="elem_monitorarAnalise"><ellipse cx="185.2487" cy="116.9497" fill="#F1F1F1" rx="150.2487" ry="32.4497" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="271" x="49.7487" y="119.7964">Monitorar Analise de Reaproveitamento</text></g><!--MD5=[e53f4b15405b2642e54dee530157869e]
+reverse link listarSolicitacao to escolaridade--><g id="link_listarSolicitacao_escolaridade"><path d="M560,257.95 C560,240.05 560,222.16 560,204.27 " fill="none" id="listarSolicitacao-backto-escolaridade" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="560,262.99,564,253.99,560,257.99,556,253.99,560,262.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ca40c1b18f644e4215be7ae725c53c14]
+reverse link monitorarSolicitacao to escolaridade--><g id="link_monitorarSolicitacao_escolaridade"><path d="M325.39,199.82 C392.84,190.06 469.1,179.02 515.6,172.28 " fill="none" id="monitorarSolicitacao-backto-escolaridade" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="320.13,200.58,329.6085,203.2555,325.0789,199.8669,328.4675,195.3373,320.13,200.58" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1b11c04488e12d2485f188abde6c8a61]
+reverse link listarSolicitacao to pesquisarSolicitacao--><g id="link_listarSolicitacao_pesquisarSolicitacao"><path d="M666.82,321.74 C731.9,337.58 815.08,357.81 880.56,373.74 " fill="none" id="listarSolicitacao-backto-pesquisarSolicitacao" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="661.77,320.51,669.5646,326.5303,666.6274,321.6958,671.4619,318.7585,661.77,320.51" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="743" y="338.0669">includes</text></g><!--MD5=[e5da87fdf38d9b871dad75feedcff2de]
+link listarSolicitacao to detalharSolicitacao--><g id="link_listarSolicitacao_detalharSolicitacao"><path d="M712.02,296 C748.82,296 788.33,296 825.65,296 " fill="none" id="listarSolicitacao-to-detalharSolicitacao" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="830.66,296,821.66,292,825.66,296,821.66,300,830.66,296" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="743.5" y="292.0669">extends</text></g><!--MD5=[7eabbf0edd8be2cf4e1128b28dd3f720]
+reverse link detalharSolicitacao to analisarDocumentacao--><g id="link_detalharSolicitacao_analisarDocumentacao"><path d="M1113.11,319.52 C1176.86,331.75 1255.7,346.87 1324.84,360.13 " fill="none" id="detalharSolicitacao-backto-analisarDocumentacao" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1108.16,318.57,1116.2451,324.1942,1113.0704,319.5121,1117.7525,316.3375,1108.16,318.57" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1184" y="332.0669">includes</text></g><!--MD5=[c3a39b874203c7fb3b7a5e65ca9b67fc]
+reverse link detalharSolicitacao to solicitarRevisao--><g id="link_detalharSolicitacao_solicitarRevisao"><path d="M1147.93,286.88 C1195.92,284.1 1249.21,281.01 1299.2,278.11 " fill="none" id="detalharSolicitacao-backto-solicitarRevisao" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1142.71,287.18,1151.9235,290.66,1147.7019,286.8948,1151.4671,282.6731,1142.71,287.18" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1184.5" y="279.0669">extends</text></g><!--MD5=[824233bb8f60973582f47ed3fd9b2936]
+link escolaridade to listarAnalisesReaproveitamento--><g id="link_escolaridade_listarAnalisesReaproveitamento"><path d="M604.34,157.18 C668.82,144.06 792.01,118.99 881.55,100.77 " fill="none" id="escolaridade-to-listarAnalisesReaproveitamento" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="886.59,99.74,876.9719,97.6204,881.691,100.7398,878.5716,105.4589,886.59,99.74" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e12c1a81a70349cd8c10f1fdfc45dbdb]
+reverse link monitorarAnalise to escolaridade--><g id="link_monitorarAnalise_escolaridade"><path d="M318.54,134.41 C387.69,143.5 467.67,154 515.74,160.32 " fill="none" id="monitorarAnalise-backto-escolaridade" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="313.58,133.76,321.9763,138.908,318.5366,134.4171,323.0276,130.9774,313.58,133.76" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[57ce602cf377ec2fcc219c94c3992590]
+link listarAnalisesReaproveitamento to processarAnaliseReaproveitamento--><g id="link_listarAnalisesReaproveitamento_processarAnaliseReaproveitamento"><path d="M1100.03,97.82 C1190.01,113.28 1315.96,134.92 1400.35,149.42 " fill="none" id="listarAnalisesReaproveitamento-to-processarAnaliseReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1405.34,150.28,1397.1431,144.8201,1400.4115,149.4372,1395.7945,152.7057,1405.34,150.28" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1184.5" y="111.0669">extends</text></g><!--MD5=[6ea1eb09bf4bb31591119ffb2c68f3a1]
+link listarAnalisesReaproveitamento to detalharAnaliseReaproveitamento--><g id="link_listarAnalisesReaproveitamento_detalharAnaliseReaproveitamento"><path d="M1129.58,77.61 C1194.85,76.96 1272.78,76.18 1339.53,75.51 " fill="none" id="listarAnalisesReaproveitamento-to-detalharAnaliseReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1344.73,75.46,1335.6849,71.5631,1339.7303,75.5171,1335.7763,79.5626,1344.73,75.46" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1184.5" y="73.0669">extends</text></g><!--MD5=[1e15aafa9369a5c016bab9207261dfb7]
+link detalharAnaliseReaproveitamento to consultarParecer--><g id="link_detalharAnaliseReaproveitamento_consultarParecer"><path d="M1638.72,76.34 C1697.49,77.28 1765.59,78.38 1826.16,79.35 " fill="none" id="detalharAnaliseReaproveitamento-to-consultarParecer" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1831.25,79.43,1822.3199,75.2763,1826.2507,79.3443,1822.1828,83.2751,1831.25,79.43" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1748" y="75.0669">includes</text></g><!--MD5=[f9f0b895dff7913cf86d89593cb18d5b]
+reverse link pesquisarAnaliseReaproveitamento to listarAnalisesReaproveitamento--><g id="link_pesquisarAnaliseReaproveitamento_listarAnalisesReaproveitamento"><path d="M989.5,156.32 C989.5,141.23 989.5,124.07 989.5,109.75 " fill="none" id="pesquisarAnaliseReaproveitamento-backto-listarAnalisesReaproveitamento" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="989.5,161.35,993.5,152.35,989.5,156.35,985.5,152.35,989.5,161.35" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="952.5" y="140.0669">extends</text></g><!--MD5=[9cd1163be45e0e1f1fca431f27b5dc0c]
+reverse link processarAnaliseReaproveitamento to solicitarParecer--><g id="link_processarAnaliseReaproveitamento_solicitarParecer"><path d="M1592,177.5 C1638.9,182.82 1695.74,188.38 1747,191 C1770.97,192.22 1777,191.19 1801,191 C1815.52,190.89 1830.65,190.72 1845.77,190.53 " fill="none" id="processarAnaliseReaproveitamento-backto-solicitarParecer" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1586.91,176.92,1595.3944,181.9216,1591.8773,177.491,1596.3079,173.9739,1586.91,176.92" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1748.5" y="187.0669">extends</text></g><!--MD5=[29b1c2a7e2d4e929ef2af64df5a63c1e]
+link processarAnaliseReaproveitamento to consultarParecer--><g id="link_processarAnaliseReaproveitamento_consultarParecer"><path d="M1579.46,150.59 C1656.69,137.72 1770.95,118.67 1859.5,103.92 " fill="none" id="processarAnaliseReaproveitamento-to-consultarParecer" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1864.5,103.08,1854.9683,100.6006,1859.5669,103.895,1856.2724,108.4936,1864.5,103.08" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1748" y="113.0669">includes</text></g><!--MD5=[2e7f0bb3aeb3a249e421b805f1519a5c]
+@startuml Escolaridade 
+!startsub ESCO
+    left to right direction
+    rectangle Escolaridade {
+        "Escolaridade" as escolaridade    
+        
+        (Listar Solicitaçoes de Reaproveitamento) as listarSolicitacao
+        (Receber Solicitação de Reaproveitamento) as receberSolicitacao
+        (Pesquisar Solicitação de Reaproveitamento) as pesquisarSolicitacao
+        (Detalhar Solicitação de Reaproveitamento) as detalharSolicitacao
+        (Monitorar Solicitação de Reaproveitamento) as monitorarSolicitacao
+        (Analisar Documentacao de Solicitaçoes de Reaproveitamento) as analisarDocumentacao
+        (Solicitar Revisão de Solicitaçoes de Reaproveitamento) as solicitarRevisao
+
+        escolaridade -left-> listarSolicitacao
+        escolaridade -up-> monitorarSolicitacao
+        
+        pesquisarSolicitacao .up.> listarSolicitacao  : includes
+        detalharSolicitacao <.up. listarSolicitacao  : extends
+        detalharSolicitacao <.. analisarDocumentacao : includes
+        detalharSolicitacao <.. solicitarRevisao : extends
+
+        (Listar Analises de Reaproveitamento) as listarAnalisesReaproveitamento
+        (Analisar Reaproveitamento) as processarAnaliseReaproveitamento
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+        (Pesquisar Analise de Reaproveitamento) as pesquisarAnaliseReaproveitamento
+        (Solicitar Parecer de Reaproveitamento) as solicitarParecer
+        (Consultar Pareceres de Reaproveitamento) as consultarParecer
+        (Monitorar Analise de Reaproveitamento) as monitorarAnalise
+
+        escolaridade - -> listarAnalisesReaproveitamento
+        escolaridade -up-> monitorarAnalise
+
+        listarAnalisesReaproveitamento ..> processarAnaliseReaproveitamento : extends
+        detalharAnaliseReaproveitamento <.up. listarAnalisesReaproveitamento  : extends
+        detalharAnaliseReaproveitamento ..> consultarParecer : includes
+        pesquisarAnaliseReaproveitamento <.right. listarAnalisesReaproveitamento  : extends
+        processarAnaliseReaproveitamento <.. solicitarParecer : extends
+        processarAnaliseReaproveitamento ..> consultarParecer : includes
+        
+    }
+!endsub
+@enduml
+
+@startuml Escolaridade 
+    left to right direction
+    rectangle Escolaridade {
+        "Escolaridade" as escolaridade    
+        
+        (Listar Solicitaçoes de Reaproveitamento) as listarSolicitacao
+        (Receber Solicitação de Reaproveitamento) as receberSolicitacao
+        (Pesquisar Solicitação de Reaproveitamento) as pesquisarSolicitacao
+        (Detalhar Solicitação de Reaproveitamento) as detalharSolicitacao
+        (Monitorar Solicitação de Reaproveitamento) as monitorarSolicitacao
+        (Analisar Documentacao de Solicitaçoes de Reaproveitamento) as analisarDocumentacao
+        (Solicitar Revisão de Solicitaçoes de Reaproveitamento) as solicitarRevisao
+
+        escolaridade -left-> listarSolicitacao
+        escolaridade -up-> monitorarSolicitacao
+        
+        pesquisarSolicitacao .up.> listarSolicitacao  : includes
+        detalharSolicitacao <.up. listarSolicitacao  : extends
+        detalharSolicitacao <.. analisarDocumentacao : includes
+        detalharSolicitacao <.. solicitarRevisao : extends
+
+        (Listar Analises de Reaproveitamento) as listarAnalisesReaproveitamento
+        (Analisar Reaproveitamento) as processarAnaliseReaproveitamento
+        (Detalhar Analise de Reaproveitamento) as detalharAnaliseReaproveitamento
+        (Pesquisar Analise de Reaproveitamento) as pesquisarAnaliseReaproveitamento
+        (Solicitar Parecer de Reaproveitamento) as solicitarParecer
+        (Consultar Pareceres de Reaproveitamento) as consultarParecer
+        (Monitorar Analise de Reaproveitamento) as monitorarAnalise
+
+        escolaridade - -> listarAnalisesReaproveitamento
+        escolaridade -up-> monitorarAnalise
+
+        listarAnalisesReaproveitamento ..> processarAnaliseReaproveitamento : extends
+        detalharAnaliseReaproveitamento <.up. listarAnalisesReaproveitamento  : extends
+        detalharAnaliseReaproveitamento ..> consultarParecer : includes
+        pesquisarAnaliseReaproveitamento <.right. listarAnalisesReaproveitamento  : extends
+        processarAnaliseReaproveitamento <.. solicitarParecer : extends
+        processarAnaliseReaproveitamento ..> consultarParecer : includes
+        
+    }
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 13:10:57 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>

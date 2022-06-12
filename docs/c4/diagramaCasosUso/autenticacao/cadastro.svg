@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="222px" preserveAspectRatio="none" style="width:626px;height:222px;background:#FFFFFF;" version="1.1" viewBox="0 0 626 222" width="626px" zoomAndPan="magnify"><defs/><g><!--MD5=[7052efa3a166a4f686889bd6c5fde351]
+entity Cadastro--><g id="elem_Cadastro"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="538.5" y="25.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="548.5" y="48.4951">Cadastro</text></g><g id="elem_preencher"><ellipse cx="425.3596" cy="179.4719" fill="#F1F1F1" rx="122.8596" ry="26.9719" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="341.8596" y="175.071">Preencher informações</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="381.3596" y="191.3679">de cadastro</text></g><g id="elem_armazenar"><ellipse cx="403.5203" cy="43.3041" fill="#F1F1F1" rx="99.5203" ry="22.3041" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="322.0203" y="46.1507">Armazenar informações</text></g><g id="elem_confirm"><ellipse cx="92.5998" cy="43.72" fill="#F1F1F1" rx="86.5998" ry="19.72" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="25.5998" y="46.5666">Validar informações</text></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><g id="elem_user"><ellipse cx="241.5" cy="150" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M241.5,158 L241.5,185 M228.5,166 L254.5,166 M241.5,185 L228.5,200 M241.5,185 L254.5,200 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="215.5" y="214.4951">Usuario</text></g><!--MD5=[b638ce1f52674266c2c0d1781b713da9]
+entity sist--><g id="elem_sist"><ellipse cx="241.5" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M241.5,22 L241.5,49 M228.5,30 L254.5,30 M241.5,49 L228.5,64 M241.5,49 L254.5,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="214" y="78.4951">Sistema</text></g><!--MD5=[b00665d9a4aa2c3f2bd479ac95016e0a]
+reverse link confirm to sist--><g id="link_confirm_sist"><path d="M184.35,43.5 C194.16,43.5 203.96,43.5 213.77,43.5 " fill="none" id="confirm-backto-sist" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="179.22,43.5,188.22,47.5,184.22,43.5,188.22,39.5,179.22,43.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[015aa4ed0717aba07379a8afb360a7fe]
+link sist to armazenar--><g id="link_sist_armazenar"><path d="M269.03,43.5 C278.94,43.5 288.86,43.5 298.77,43.5 " fill="none" id="sist-to-armazenar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="303.96,43.5,294.96,39.5,298.96,43.5,294.96,47.5,303.96,43.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4c46c630c5bd97ce7ee56abd14cb7e1e]
+link sist to user--><g id="link_sist_user"><path d="M241.5,81.83 C241.5,98.67 241.5,118.65 241.5,136.06 " fill="none" id="sist-to-user" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="241.5,141.37,245.5,132.37,241.5,136.37,237.5,132.37,241.5,141.37" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[83157581030b9deab2176d9d4c9df87c]
+link user to preencher--><g id="link_user_preencher"><path d="M267.73,179.5 C277.53,179.5 287.33,179.5 297.12,179.5 " fill="none" id="user-to-preencher" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="302.25,179.5,293.25,175.5,297.25,179.5,293.25,183.5,302.25,179.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[854329d5b4bd077dcc33e2bf6eb04d85]
+@startuml cadastro
+skinparam Style strictuml
+
+(Preencher informações\nde cadastro) as preencher
+(Armazenar informações) as armazenar 
+(Validar informações) as confirm
+
+:Usuario: as user
+:Sistema:  as sist
+
+rectangle Cadastro{
+    sist -left-> confirm
+    sist ->armazenar
+    sist - -> user 
+    user -right-> preencher
+}
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 13:10:57 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>
