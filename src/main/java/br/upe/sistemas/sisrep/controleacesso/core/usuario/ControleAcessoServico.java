@@ -200,7 +200,7 @@ public class ControleAcessoServico implements IControleAcessoServico, UserDetail
 
 
     email = StringUtils.trimWhitespace(email);
-    Usuario usuario = this.usuarioRepo.findByNomeIgnoreCase(email);
+    Usuario usuario = this.usuarioRepo.findByEmailIgnoreCase(email);
 
     if (usuario == null || usuario.getId() == null) {
       log.error("Usuario com email {} não encontrado no sistema", email);

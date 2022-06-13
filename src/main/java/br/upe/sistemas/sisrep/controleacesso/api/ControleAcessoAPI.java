@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.upe.sistemas.sisrep.controleacesso.api.vos.AssociarPerfilVO;
 import br.upe.sistemas.sisrep.controleacesso.api.vos.DadosUsuarioVO;
+import br.upe.sistemas.sisrep.controleacesso.api.vos.EmailVO;
 import br.upe.sistemas.sisrep.controleacesso.api.vos.PerfilVO;
 import br.upe.sistemas.sisrep.controleacesso.api.vos.UsuarioVO;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.IControleAcessoServico;
@@ -71,8 +72,8 @@ public class ControleAcessoAPI {
   }
 
   @GetMapping("usuario/obterDados")
-  public ResponseEntity<DadosUsuarioVO> obterDadosUsuario(@RequestBody String email) {
-    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(email);
+  public ResponseEntity<DadosUsuarioVO> obterDadosUsuario(@RequestBody EmailVO email) {
+    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(email.getEmail());
 
     DadosUsuarioVO vo = DadosUsuarioVO.builder().foto(usuario.getFoto()).email(usuario.getEmail())
         .nome(usuario.getNome()).endereco(usuario.getEndereco()).cidade(usuario.getCidade())

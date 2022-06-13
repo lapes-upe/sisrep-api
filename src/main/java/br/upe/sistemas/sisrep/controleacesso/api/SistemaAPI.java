@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import br.upe.sistemas.sisrep.controleacesso.api.vos.EmailVO;
 import br.upe.sistemas.sisrep.controleacesso.api.vos.PerfilUsuarioVO;
 import br.upe.sistemas.sisrep.controleacesso.api.vos.SistemaVO;
-import br.upe.sistemas.sisrep.controleacesso.api.vos.UsuarioVO;
 import br.upe.sistemas.sisrep.controleacesso.core.servicos.ISistemaServico;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.IControleAcessoServico;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
@@ -43,9 +43,9 @@ public class SistemaAPI {
   }
 
   @GetMapping("/perfis")
-  public ResponseEntity<List<PerfilUsuarioVO>> listarPerfis(@RequestBody UsuarioVO usuarioVO) {
+  public ResponseEntity<List<PerfilUsuarioVO>> listarPerfis(@RequestBody EmailVO email) {
 
-    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(usuarioVO.getEmail());
+    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(email.getEmail());
 
     List<PerfilUsuarioVO> vos = usuario.getPerfis().stream().map(
         perfil -> PerfilUsuarioVO.builder().nome(perfil.getNome()).icone(perfil.getIcone()).build())
