@@ -17,13 +17,14 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @EqualsAndHashCode(of = {"id", "nome"}, callSuper = false)
 @Table(name = "perfil", schema = "acesso")
-@SequenceGenerator(name = "sequenciador", sequenceName = "perfil_seq", allocationSize = 1, schema = "acesso")
+@SequenceGenerator(name = "sequenciador", sequenceName = "perfil_seq", allocationSize = 1,
+    schema = "acesso")
 public class Perfil extends Entidade {
 
   @NotBlank(message = "O nome é obrigatório")
   @Size(message = "O nome deve ter entre 5 e 20 caracteres", min = 5, max = 20)
   private String nome;
 
-  @NotBlank(message = "O ícone é obrigatório")
+  // @NotBlank(message = "O ícone é obrigatório")
   private byte[] icone;
 }

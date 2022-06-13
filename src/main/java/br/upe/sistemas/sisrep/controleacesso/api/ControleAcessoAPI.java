@@ -70,6 +70,17 @@ public class ControleAcessoAPI {
     ctrlAcessoServico.excluirUsuario(id);
   }
 
+  @GetMapping("usuario/obterDados")
+  public ResponseEntity<DadosUsuarioVO> obterDadosUsuario(@RequestBody String email) {
+    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(email);
+
+    DadosUsuarioVO vo = DadosUsuarioVO.builder().foto(usuario.getFoto()).email(usuario.getEmail())
+        .nome(usuario.getNome()).endereco(usuario.getEndereco()).cidade(usuario.getCidade())
+        .cep(usuario.getCep()).celular(usuario.getCelular()).build();
+
+    return ResponseEntity.status(HttpStatus.FOUND).body(vo);
+  }
+
   @PostMapping("/perfil")
   public ResponseEntity<PerfilVO> incluir(@Valid @RequestBody PerfilVO perfilVO) {
     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
@@ -112,17 +123,6 @@ public class ControleAcessoAPI {
     Usuario usuario = ctrlAcessoServico.adicionarPerfilAoUsuario(vo.getEmail(), vo.getPerfil());
 
     return ResponseEntity.ok().body(convert(usuario));
-  }
-
-  @GetMapping("/obterDadosUsuario")
-  public ResponseEntity<DadosUsuarioVO> obterDadosUsuario(String email) {
-    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(email);
-
-    DadosUsuarioVO vo = DadosUsuarioVO.builder().foto(usuario.getFoto()).email(usuario.getEmail())
-        .nome(usuario.getNome()).endereco(usuario.getEndereco()).cidade(usuario.getCidade())
-        .cep(usuario.getCep()).celular(usuario.getCelular()).build();
-
-    return ResponseEntity.status(HttpStatus.FOUND).body(vo);
   }
 
   private Usuario convert(UsuarioVO vo) {
