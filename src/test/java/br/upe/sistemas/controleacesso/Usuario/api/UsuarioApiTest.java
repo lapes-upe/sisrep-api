@@ -31,13 +31,12 @@ public class UsuarioApiTest {
     mockMvc.perform(get("/api/controleacesso/usuarios")).andExpect(status().isOk());
   }
 
-  // Não está funcionando
+  // Não está funcionando(O problema tá nesse setFoto)
   public void deveRetornarSucesso_QuandoIncluirUsuario() throws Exception {
     Usuario usuario = new Usuario();
 
     List<Perfil> perfis = new ArrayList<Perfil>();
 
-    // O problema tá nesse setFoto
     usuario.setFoto(null).setEmail("teste@gmail.com").setNome("teste").setEndereco("endereco")
         .setCidade("cidade").setCep("cep").setCelular("celular").setCpf("13580169416")
         .setToken("token").setAtivo(true).setPerfis(perfis);
