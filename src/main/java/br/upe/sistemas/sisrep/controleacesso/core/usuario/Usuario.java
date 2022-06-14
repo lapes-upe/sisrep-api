@@ -11,7 +11,6 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.br.CPF;
@@ -59,7 +58,7 @@ public class Usuario extends Entidade {
   @NotNull(message = "Informe se o usuário está ativo")
   private Boolean ativo;
 
-  @NotEmpty(message = "O usuário deve ter ao menos um perfil associado")
+  // @NotEmpty(message = "O usuário deve ter ao menos um perfil associado")
   @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE},
       targetEntity = Perfil.class)
   @JoinTable(name = "usuario_perfil", joinColumns = @JoinColumn(name = "id_usuario"),
