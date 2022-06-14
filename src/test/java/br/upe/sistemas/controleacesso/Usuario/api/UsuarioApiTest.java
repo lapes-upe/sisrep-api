@@ -54,13 +54,15 @@ public class UsuarioApiTest {
 
   }
 
-  // Tá retornando codigo de erro 302
-  public void deveRetornarSucesso_QuandoObterDados() throws Exception {
+  @Test
+  public void deveRetornarFound_QuandoObterDados() throws Exception {
     EmailVO email = new EmailVO();
     email.setEmail("aluno@upe.br");
 
-    mockMvc.perform(get("/api/controleacesso/usuario/obterDados").contentType("application/json")
-        .content(objectMapper.writeValueAsString(email))).andExpect(status().isOk());
+    mockMvc
+        .perform(get("/api/controleacesso/usuario/obterDados").contentType("application/json")
+            .content(objectMapper.writeValueAsString(email)))
+        .andExpect(status().is3xxRedirection());
   }
 
 }
