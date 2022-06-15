@@ -1,4 +1,4 @@
-package br.upe.sistemas.controleacesso.api.Usuario;
+package br.upe.sistemas.controleacesso.api.controleAcesso;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
