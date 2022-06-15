@@ -1,4 +1,4 @@
-package br.upe.sistemas.controleacesso.Usuario.api;
+package br.upe.sistemas.controleacesso.api;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
