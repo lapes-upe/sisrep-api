@@ -1,9 +1,11 @@
 package br.upe.sistemas.sisrep.controleacesso.api.vos;
 
 import javax.validation.constraints.NotBlank;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class AssociarPerfilVO {
 
   @NotBlank(message = "O email é obrigatório")
