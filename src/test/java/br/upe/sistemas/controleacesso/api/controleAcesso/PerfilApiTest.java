@@ -23,7 +23,7 @@ public class PerfilApiTest {
   @Autowired
   private ObjectMapper objectMapper;
 
-  // Não funciona
+  // TODO
   public void deveRetornarCreated_QuandoIncluirPerfil() throws Exception {
     PerfilVO perfil = PerfilVO.builder().nome("asdsa").icone(null).build();
 
@@ -32,11 +32,11 @@ public class PerfilApiTest {
   }
 
   public void deveRetornarSucesso_QuandoAlterarPerfil() {
-
+    // TODO
   }
 
   public void deveRetornarSucesso_QuandoExcluirPerfil() {
-
+    // TODO
   }
 
   @Test
@@ -44,7 +44,7 @@ public class PerfilApiTest {
     mockMvc.perform(get("/api/controleacesso/perfis")).andExpect(status().isOk());
   }
 
-  // Não funciona
+  // TODO
   public void deveRetornarSucesso_QuandoAdicionarPerfilAUsuario() throws Exception {
     AssociarPerfilVO associarPerfil =
         AssociarPerfilVO.builder().email("aluno@upe.br").perfil("teste").build();

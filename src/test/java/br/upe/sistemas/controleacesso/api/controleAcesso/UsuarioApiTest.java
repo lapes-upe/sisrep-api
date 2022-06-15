@@ -32,7 +32,7 @@ public class UsuarioApiTest {
     mockMvc.perform(get("/api/controleacesso/usuarios")).andExpect(status().isOk());
   }
 
-  // Não funciona(O problema tá nesse setFoto)
+  // TODO Não funciona(O problema tá nesse setFoto)
   public void deveRetornarSucesso_QuandoIncluirUsuario() throws Exception {
     Usuario usuario = new Usuario();
 
@@ -47,10 +47,10 @@ public class UsuarioApiTest {
   }
 
   public void deveRetornarSucesso_QuandoAlterarUsuario() throws Exception {
-
+    // TODO
   }
 
-  // Não funciona
+  // TODO
   public void deveRetornarSucesso_QuandoExcluirUsuario() throws Exception {
     mockMvc.perform(delete("/usuario/{id}", 5l)).andExpect(status().isOk());
   }
