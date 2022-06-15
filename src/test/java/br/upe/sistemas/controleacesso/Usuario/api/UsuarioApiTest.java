@@ -1,5 +1,6 @@
 package br.upe.sistemas.controleacesso.Usuario.api;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -49,8 +50,9 @@ public class UsuarioApiTest {
 
   }
 
+  // Não sei pq não está funcionando
   public void deveRetornarSucesso_QuandoExcluirUsuario() throws Exception {
-
+    mockMvc.perform(delete("/usuario/{id}", 5l)).andExpect(status().isOk());
   }
 
   @Test
