@@ -1,5 +1,12 @@
 package br.upe.sistemas.sisrep.sisrep.modelo;
 
-public class Disciplina {
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
+import lombok.Data;
 
+@Data
+public class Disciplina {
+  private String nome;
+  private int cargaHoraria;
+  private double media;
+  private Usuario usuario;
 }
