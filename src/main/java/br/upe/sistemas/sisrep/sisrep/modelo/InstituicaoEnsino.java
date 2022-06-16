@@ -1,8 +1,10 @@
 package br.upe.sistemas.sisrep.sisrep.modelo;
 
+import javax.persistence.Entity;
 import lombok.Data;
 
 @Data
+@Entity
 public class InstituicaoEnsino {
-  String nome;
+  private String nome;
 }
