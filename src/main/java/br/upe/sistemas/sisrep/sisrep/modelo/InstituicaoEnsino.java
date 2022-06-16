@@ -1,8 +1,8 @@
 package br.upe.sistemas.sisrep.sisrep.modelo;
 
-import lombok.Data;
+import java.util.List;
 
-@Data
 public class InstituicaoEnsino {
-  private String nome;
+  String nome;
+  List<Curso> cursos;
 }

@@ -1,10 +1,10 @@
 package br.upe.sistemas.sisrep.sisrep.modelo;
 
 import java.util.List;
-import lombok.Data;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 
-@Data
 public class FichaDispensa {
-  private List<Disciplina> disciplina;
-  private StatusDisciplinaEnum status;
+  Usuario usuario;
+  List<Disciplina> disciplinas;
+  StatusReaproveitamentoDisciplinaEnum status;
 }
