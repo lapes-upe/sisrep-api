@@ -42,8 +42,8 @@ public class DisciplinaServico implements IDisciplinaServico {
     }
   }
 
-  private void validarExclusaoDisciplina(long id) {
-    if (id == 0L) {
+  private void validarExclusaoDisciplina(Long id) {
+    if (id == null) {
       throw new SisrepException(
           "Ocorreu um erro ao excluir curso: Informe o identificador correto");
     }

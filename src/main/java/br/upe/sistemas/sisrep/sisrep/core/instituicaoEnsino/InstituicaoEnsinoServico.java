@@ -45,8 +45,8 @@ public class InstituicaoEnsinoServico implements IInstituicaoEnsinoServico {
     }
   }
 
-  private void validarExclusaoIes(long id) {
-    if (id == 0L) {
+  private void validarExclusaoIes(Long id) {
+    if (id == null) {
       throw new SisrepException(
           "Ocorreu um erro ao excluir instituição de ensino: Informe o identificador correto");
     }

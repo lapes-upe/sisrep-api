@@ -44,8 +44,8 @@ public class CursoServico implements ICursoServico {
     }
   }
 
-  public void validarExclusaoUsuario(long id) {
-    if (id == 0L) {
+  public void validarExclusaoUsuario(Long id) {
+    if (id == null) {
       throw new SisrepException(
           "Ocorreu um erro ao excluir curso: Informe o identificador correto");
     }
