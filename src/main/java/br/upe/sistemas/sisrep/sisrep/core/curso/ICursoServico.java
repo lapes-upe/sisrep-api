@@ -6,7 +6,7 @@ public interface ICursoServico {
 
   List<Curso> listar();
 
-  Curso incluir();
+  Curso incluir(Curso curso);
 
   Curso alterar(Curso curso);
 

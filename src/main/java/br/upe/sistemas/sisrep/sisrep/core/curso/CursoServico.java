@@ -11,7 +11,7 @@ public class CursoServico implements ICursoServico {
   }
 
   @Override
-  public Curso incluir() {
+  public Curso incluir(Curso curso) {
     // TODO Auto-generated method stub
     return null;
   }
