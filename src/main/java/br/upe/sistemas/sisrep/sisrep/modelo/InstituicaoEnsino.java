@@ -17,13 +17,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "ies", schema = "public")
+@Table(name = "instituicao_ensino", schema = "public")
 public class InstituicaoEnsino {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
   private String nome;
 
-  @OneToMany(mappedBy = "instituicao_nsino")
+  @OneToMany(mappedBy = "instituicao_ensino")
   private List<Curso> cursos;
 }
