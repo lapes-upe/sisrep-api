@@ -22,10 +22,10 @@ public class Disciplina {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  String nome;
-  int cargaHoraria;
-  double media;
+  private String nome;
+  private int cargaHoraria;
+  private double media;
 
   @ManyToOne
-  Curso curso;
+  private Curso curso;
 }

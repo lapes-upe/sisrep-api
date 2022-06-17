@@ -26,9 +26,9 @@ public class FichaDispensa {
   private Long id;
 
   @ManyToOne
-  Usuario usuario;
+  private Usuario usuario;
 
   @ManyToMany
   List<Disciplina> disciplinas;
-  StatusReaproveitamentoDisciplinaEnum status;
+  private StatusReaproveitamentoDisciplinaEnum status;
 }
