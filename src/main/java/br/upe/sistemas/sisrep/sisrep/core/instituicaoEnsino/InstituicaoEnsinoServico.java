@@ -1,11 +1,13 @@
 package br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino;
 
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
 import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
 public class InstituicaoEnsinoServico implements IInstituicaoEnsinoServico {
 
+  @Autowired
   private IInstituicaoEnsinoRepositorio iesRepositorio;
 
   @Override
@@ -46,12 +48,12 @@ public class InstituicaoEnsinoServico implements IInstituicaoEnsinoServico {
   private void validarExclusaoIes(long id) {
     if (id == 0L) {
       throw new SisrepException(
-          "Ocorreu um erro ao excluir usuário: Informe o identificador correto");
+          "Ocorreu um erro ao excluir instituição de ensino: Informe o identificador correto");
     }
 
     if (!iesRepositorio.existsById(id)) {
       throw new NaoEncontradoException(
-          "Ocorreu um erro ao excluir usuário: usuário não encontrado");
+          "Ocorreu um erro ao excluir instituição de ensino: instituição de ensino não encontrada");
     }
   }
 
