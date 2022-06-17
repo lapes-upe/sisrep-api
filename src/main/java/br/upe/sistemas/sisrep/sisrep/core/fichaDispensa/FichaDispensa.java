@@ -1,13 +1,15 @@
-package br.upe.sistemas.sisrep.sisrep.modelo;
+package br.upe.sistemas.sisrep.sisrep.core.fichaDispensa;
 
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
+import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,18 +20,16 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "curso", schema = "public")
-public class Curso {
-
+@Table(name = "ficha_dispensa", schema = "public")
+public class FichaDispensa {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  private String nome;
-
-  @OneToMany(mappedBy = "curso")
-  private List<Disciplina> disciplinas;
-
   @ManyToOne
-  private InstituicaoEnsino instituicaoEnsino;
+  private Usuario usuario;
+
+  @ManyToMany
+  List<Disciplina> disciplinas;
+  private StatusReaproveitamentoDisciplinaEnum status;
 }
