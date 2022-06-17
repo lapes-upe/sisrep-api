@@ -33,7 +33,7 @@ public class IesAPI {
   @PostMapping("/instituicao")
   public ResponseEntity<IesVO> incluirInstituicao(@RequestBody IesVO iesVo) {
     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
-        .path("/api/sisrep/ies/incluirIes").toUriString());
+        .path("/api/sisrep/instituicao").toUriString());
 
     InstituicaoEnsino ies = convertToModel(iesVo);
     IesVO vo = convertToVO(iesServico.incluir(ies));
