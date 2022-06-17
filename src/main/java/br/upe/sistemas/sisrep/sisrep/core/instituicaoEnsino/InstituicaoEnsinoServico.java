@@ -1,31 +1,58 @@
 package br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino;
 
 import java.util.List;
+import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
+import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
 public class InstituicaoEnsinoServico implements IInstituicaoEnsinoServico {
 
+  private IInstituicaoEnsinoRepositorio iesRepositorio;
+
   @Override
   public List<InstituicaoEnsino> listar() {
-    // TODO Auto-generated method stub
-    return null;
+    return (List<InstituicaoEnsino>) iesRepositorio.findAll();
   }
 
   @Override
   public InstituicaoEnsino incluir(InstituicaoEnsino ies) {
-    // TODO Auto-generated method stub
-    return null;
+    validarInclusaoIes(ies);
+    return iesRepositorio.save(ies);
   }
 
   @Override
   public InstituicaoEnsino alterar(InstituicaoEnsino ies) {
-    // TODO Auto-generated method stub
     return null;
   }
 
   @Override
   public void excluir(long id) {
-    // TODO Auto-generated method stub
+    validarExclusaoIes(id);
+    iesRepositorio.deleteById(id);
 
+  }
+
+  private void validarInclusaoIes(InstituicaoEnsino ies) {
+    if (ies == null) {
+      throw new SisrepException("Dados nulos");
+    }
+
+    if (iesRepositorio.findByNome(ies.getNome()).isPresent()) {
+      throw new SisrepException(
+          "Ocorreu um erro ao incluir o usuário: já existe uma instituição de ensino cadastrada com esse nome"
+              + ies.getNome());
+    }
+  }
+
+  private void validarExclusaoIes(long id) {
+    if (id == 0L) {
+      throw new SisrepException(
+          "Ocorreu um erro ao excluir usuário: Informe o identificador correto");
+    }
+
+    if (!iesRepositorio.existsById(id)) {
+      throw new NaoEncontradoException(
+          "Ocorreu um erro ao excluir usuário: usuário não encontrado");
+    }
   }
 
 }
