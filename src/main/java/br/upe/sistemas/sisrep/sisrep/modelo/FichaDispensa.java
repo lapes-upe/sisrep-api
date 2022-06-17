@@ -6,7 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,7 +25,8 @@ public class FichaDispensa {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  // Usuario usuario;
+  @ManyToOne
+  Usuario usuario;
 
   @ManyToMany
   List<Disciplina> disciplinas;
