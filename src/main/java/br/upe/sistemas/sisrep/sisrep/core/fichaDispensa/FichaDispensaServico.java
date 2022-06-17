@@ -1,23 +1,23 @@
-package br.upe.sistemas.sisrep.sisrep.core.disciplina;
+package br.upe.sistemas.sisrep.sisrep.core.fichaDispensa;
 
 import java.util.List;
 
-public class DisciplinaServico implements IDisciplinaServico {
+public class FichaDispensaServico implements IFichaDispensaServico {
 
   @Override
-  public List<Disciplina> listar() {
+  public List<FichaDispensa> listar() {
     // TODO Auto-generated method stub
     return null;
   }
 
   @Override
-  public Disciplina incluir(Disciplina disciplina) {
+  public FichaDispensa incluir(FichaDispensa fichaDispensa) {
     // TODO Auto-generated method stub
     return null;
   }
 
   @Override
-  public Disciplina alterar(Disciplina disciplina) {
+  public FichaDispensa alterar(FichaDispensa fichaDispensa) {
     // TODO Auto-generated method stub
     return null;
   }
