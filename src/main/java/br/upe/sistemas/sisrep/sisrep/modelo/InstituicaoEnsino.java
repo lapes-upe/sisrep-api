@@ -22,6 +22,7 @@ public class InstituicaoEnsino {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
+
   private String nome;
 
   @OneToMany(mappedBy = "instituicao_ensino")
