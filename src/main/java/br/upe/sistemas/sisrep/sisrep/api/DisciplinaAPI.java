@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class DisciplinaAPI {
 
-  private DisciplinaServico disciplinaServico;
+  private final DisciplinaServico disciplinaServico;
 
   @GetMapping("/disciplinas")
   public ResponseEntity<List<DisciplinaVO>> listarDisciplinas() {
@@ -43,11 +44,11 @@ public class DisciplinaAPI {
   // Fazer método de alterar disciplina
 
   @DeleteMapping("/disciplina/{id}")
-  public void excluirDisciplina(Long id) {
+  public void excluirDisciplina(@PathVariable Long id) {
     disciplinaServico.excluir(id);
   }
 
-  public DisciplinaVO convertToVO(Disciplina disciplina) {
+  private DisciplinaVO convertToVO(Disciplina disciplina) {
     DisciplinaVO vo = DisciplinaVO.builder().id(disciplina.getId()).nome(disciplina.getNome())
         .cargaHoraria(disciplina.getCargaHoraria()).media(disciplina.getMedia())
         .curso(disciplina.getCurso()).build();
