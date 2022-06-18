@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
 import lombok.AllArgsConstructor;
@@ -27,6 +28,7 @@ public class FichaDispensa {
   private Long id;
 
   @ManyToOne
+  @NotBlank(message = "O usuário é obrigatório")
   private Usuario usuario;
 
   @ManyToMany

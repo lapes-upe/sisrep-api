@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
 import br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino.InstituicaoEnsino;
 import lombok.AllArgsConstructor;
@@ -27,11 +28,13 @@ public class Curso {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
+  @NotBlank(message = "O nome é obrigatório")
   private String nome;
 
   @OneToMany(mappedBy = "curso")
   private List<Disciplina> disciplinas;
 
   @ManyToOne
+  @NotBlank(message = "A instituição de ensino é obrigatória")
   private InstituicaoEnsino instituicaoEnsino;
 }

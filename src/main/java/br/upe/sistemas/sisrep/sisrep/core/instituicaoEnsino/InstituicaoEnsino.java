@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import br.upe.sistemas.sisrep.sisrep.core.curso.Curso;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,6 +25,7 @@ public class InstituicaoEnsino {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
+  @NotBlank(message = "O nome é obrigatório")
   private String nome;
 
   @OneToMany
