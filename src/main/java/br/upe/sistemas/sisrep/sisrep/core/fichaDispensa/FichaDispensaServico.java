@@ -2,9 +2,11 @@ package br.upe.sistemas.sisrep.sisrep.core.fichaDispensa;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
 import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
+@Service
 public class FichaDispensaServico implements IFichaDispensaServico {
 
   @Autowired

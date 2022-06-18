@@ -2,9 +2,11 @@ package br.upe.sistemas.sisrep.sisrep.core.curso;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
 import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
+@Service
 public class CursoServico implements ICursoServico {
 
   @Autowired

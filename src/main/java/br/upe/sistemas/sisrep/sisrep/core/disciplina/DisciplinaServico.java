@@ -1,9 +1,11 @@
 package br.upe.sistemas.sisrep.sisrep.core.disciplina;
 
 import java.util.List;
+import org.springframework.stereotype.Service;
 import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
 import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
+@Service
 public class DisciplinaServico implements IDisciplinaServico {
 
   private IDisciplinaRepositorio disciplinaRepositorio;
