@@ -25,11 +25,11 @@ public class MalhaCurricular {
 
   private DateTime anoImplantacao;
 
+  private File parecerCEE;
+
   @ManyToOne
   private Curso curso;
 
   @OneToMany(mappedBy = "malha_curricular")
   private List<Disciplina> disciplinas;
-
-  private File parecerCEE;
 }

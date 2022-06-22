@@ -25,10 +25,10 @@ public class FichaDispensa {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  @OneToOne
-  private Disciplina disciplina;
-
   private StatusReaproveitamentoDisciplinaEnum status;
 
   private List<File> documentacao;
+
+  @OneToOne
+  private Disciplina disciplina;
 }
