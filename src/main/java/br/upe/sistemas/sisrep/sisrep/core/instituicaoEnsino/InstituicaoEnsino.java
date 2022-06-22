@@ -28,6 +28,9 @@ public class InstituicaoEnsino {
   @NotBlank(message = "O nome é obrigatório")
   private String nome;
 
+  @NotBlank(message = "A cidade é obrigatória")
+  private String cidade;
+
   @OneToMany
   private List<Curso> cursos;
 }
