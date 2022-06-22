@@ -31,6 +31,12 @@ public class InstituicaoEnsino {
   @NotBlank(message = "A cidade é obrigatória")
   private String cidade;
 
+  @NotBlank(message = "o estado é obrigatório")
+  private String estado;
+
+  @NotBlank(message = "O código mec é obrigatório")
+  private String codigoMec;
+
   @OneToMany
   private List<Curso> cursos;
 }
