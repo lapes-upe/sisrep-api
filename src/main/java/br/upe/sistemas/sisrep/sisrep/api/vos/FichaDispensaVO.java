@@ -11,7 +11,7 @@ import lombok.Data;
 @Builder
 public class FichaDispensaVO {
   private Long id;
-  private List<Disciplina> disciplinas;
   private StatusReaproveitamentoDisciplinaEnum status;
   private List<File> documentacao;
+  private Disciplina disciplina;
 }
