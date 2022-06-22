@@ -50,12 +50,13 @@ public class CursoAPI {
 
   private CursoVO convertToVO(Curso curso) {
     CursoVO vo = CursoVO.builder().id(curso.getId()).nome(curso.getNome())
-        .ies(curso.getInstituicaoEnsino()).build();
+        .ies(curso.getInstituicaoExterna()).build();
 
     return vo;
   }
 
   private Curso convertToModel(CursoVO vo) {
-    return Curso.builder().id(vo.getId()).nome(vo.getNome()).instituicaoEnsino(vo.getIes()).build();
+    return Curso.builder().id(vo.getId()).nome(vo.getNome()).instituicaoExterna(vo.getIes())
+        .build();
   }
 }
