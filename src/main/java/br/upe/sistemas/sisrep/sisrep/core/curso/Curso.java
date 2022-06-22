@@ -31,7 +31,7 @@ public class Curso {
   private String nome;
 
   @OneToMany(mappedBy = "curso")
-  private List<MalhaCurricular> malha;
+  private List<MalhaCurricular> malhas;
 
   @ManyToOne
   @NotBlank(message = "A instituição de ensino é obrigatória")
