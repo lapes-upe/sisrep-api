@@ -1,5 +1,7 @@
 package br.upe.sistemas.sisrep.sisrep.core.disciplina;
 
+import java.io.File;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,8 +28,20 @@ public class Disciplina {
 
   @NotBlank(message = "O nome é obrigatório")
   private String nome;
+
   @NotBlank(message = "A carga horária é obrigatória")
-  private int cargaHoraria;
+  private int cargaHorariaTeorica;
+
+  private int cargaHorariaPratica;
+
+  private int periodo;
+
+  private List<Disciplina> preRequisitos;
+
+  private List<Disciplina> coRequisitos;
+
+  private File ementa;
+
   @NotBlank(message = "A média é obrigatória")
   private double media;
 
