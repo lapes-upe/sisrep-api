@@ -3,7 +3,7 @@ package br.upe.sistemas.sisrep.sisrep.api.vos;
 import java.io.File;
 import java.util.List;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
-import br.upe.sistemas.sisrep.sisrep.core.dispensa.StatusReaproveitamentoDisciplinaEnum;
+import br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa.StatusReaproveitamentoDisciplinaEnum;
 import lombok.Builder;
 import lombok.Data;
 

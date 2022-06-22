@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.upe.sistemas.sisrep.sisrep.api.vos.FichaDispensaVO;
-import br.upe.sistemas.sisrep.sisrep.core.dispensa.Dispensa;
-import br.upe.sistemas.sisrep.sisrep.core.dispensa.DispensaServico;
+import br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa.Dispensa;
+import br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa.DispensaServico;
 import lombok.RequiredArgsConstructor;
 
 @RestController

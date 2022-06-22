@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.core.dispensa;
+package br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa;
 
 import java.io.File;
 import java.util.List;

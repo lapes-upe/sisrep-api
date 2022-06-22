@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.core.dispensa;
+package br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
