@@ -29,17 +29,22 @@ public class Disciplina {
   @NotBlank(message = "O nome é obrigatório")
   private String nome;
 
-  @NotBlank(message = "A carga horária é obrigatória")
+  @NotBlank(message = "A carga horária teórica é obrigatória")
   private int cargaHorariaTeorica;
 
+  @NotBlank(message = "A carga horária prática é obrigatória")
   private int cargaHorariaPratica;
 
+  @NotBlank(message = "O período é obrigatório")
   private int periodo;
 
+  @NotBlank(message = "Os pré-requisitos da disciplina é obrigatório")
   private List<Disciplina> preRequisitos;
 
+  @NotBlank(message = "Os có-requisitos da disciplina é obrigatório")
   private List<Disciplina> coRequisitos;
 
+  @NotBlank(message = "A ementa é obrigatória")
   private File ementa;
 
   @NotBlank(message = "A média é obrigatória")
