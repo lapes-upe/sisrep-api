@@ -47,9 +47,6 @@ public class Disciplina {
   @NotBlank(message = "A ementa é obrigatória")
   private File ementa;
 
-  @NotBlank(message = "A média é obrigatória")
-  private double media;
-
   @NotBlank(message = "O malha curricular é obrigatória")
   @ManyToOne
   private MalhaCurricular malhaCurricular;
