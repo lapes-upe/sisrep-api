@@ -29,6 +29,9 @@ public class Disciplina {
   @NotBlank(message = "O nome é obrigatório")
   private String nome;
 
+  @NotBlank(message = "O código siga é obrigatório")
+  private String codigoSiga;
+
   @NotBlank(message = "A carga horária teórica é obrigatória")
   private int cargaHorariaTeorica;
 
@@ -46,6 +49,8 @@ public class Disciplina {
 
   @NotBlank(message = "A ementa é obrigatória")
   private File ementa;
+
+  private String natureza;
 
   @NotBlank(message = "O malha curricular é obrigatória")
   @ManyToOne
