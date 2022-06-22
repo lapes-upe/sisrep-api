@@ -18,5 +18,6 @@ public class DisciplinaVO {
   private List<Disciplina> preRequisitos;
   private List<Disciplina> coRequisitos;
   private File ementa;
+  private String natureza;
   private MalhaCurricular malha;
 }
