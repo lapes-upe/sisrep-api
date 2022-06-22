@@ -50,6 +50,7 @@ public class Disciplina {
   @NotBlank(message = "A ementa é obrigatória")
   private File ementa;
 
+  @NotBlank(message = "A natureza é obrigatória")
   private String natureza;
 
   @NotBlank(message = "O malha curricular é obrigatória")
