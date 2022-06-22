@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
 import lombok.AllArgsConstructor;
@@ -25,8 +25,8 @@ public class FichaDispensa {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  @ManyToMany
-  List<Disciplina> disciplinas;
+  @OneToOne
+  private Disciplina disciplina;
 
   private StatusReaproveitamentoDisciplinaEnum status;
 
