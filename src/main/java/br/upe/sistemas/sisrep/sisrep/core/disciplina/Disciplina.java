@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
-import br.upe.sistemas.sisrep.sisrep.core.curso.Curso;
+import br.upe.sistemas.sisrep.sisrep.core.malhaCurricular.MalhaCurricular;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -50,7 +50,7 @@ public class Disciplina {
   @NotBlank(message = "A média é obrigatória")
   private double media;
 
-  @NotBlank(message = "O curso é obrigatório")
+  @NotBlank(message = "O malha curricular é obrigatória")
   @ManyToOne
-  private Curso curso;
+  private MalhaCurricular malhaCurricular;
 }

@@ -9,8 +9,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
-import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
 import br.upe.sistemas.sisrep.sisrep.core.instituicao.Instituicao;
+import br.upe.sistemas.sisrep.sisrep.core.malhaCurricular.MalhaCurricular;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -31,7 +31,7 @@ public class Curso {
   private String nome;
 
   @OneToMany(mappedBy = "curso")
-  private List<Disciplina> disciplinas;
+  private List<MalhaCurricular> malha;
 
   @ManyToOne
   @NotBlank(message = "A instituição de ensino é obrigatória")
