@@ -23,7 +23,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Table(name = "curso", schema = "public")
 public class Curso {
-
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
