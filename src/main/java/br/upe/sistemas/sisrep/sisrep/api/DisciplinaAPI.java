@@ -50,16 +50,14 @@ public class DisciplinaAPI {
 
   private DisciplinaVO convertToVO(Disciplina disciplina) {
     DisciplinaVO vo = DisciplinaVO.builder().id(disciplina.getId()).nome(disciplina.getNome())
-        .cargaHoraria(disciplina.getCargaHorariaPratica()).media(disciplina.getMedia())
-        .curso(disciplina.getCurso()).build();
+        .cargaHoraria(disciplina.getCargaHorariaPratica()).media(disciplina.getMedia()).build();
 
     return vo;
   }
 
   private Disciplina convertToModel(DisciplinaVO vo) {
     return Disciplina.builder().id(vo.getId()).nome(vo.getNome())
-        .cargaHorariaPratica(vo.getCargaHoraria()).media(vo.getMedia()).curso(vo.getCurso())
-        .build();
+        .cargaHorariaPratica(vo.getCargaHoraria()).media(vo.getMedia()).build();
   }
 
 }
