@@ -10,17 +10,17 @@ import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 public class DispensaServico implements IDispensaServico {
 
   @Autowired
-  IDispensaRepositorio fichaRepositorio;
+  IDispensaRepositorio dispensaRepositorio;
 
   @Override
   public List<Dispensa> listar() {
-    return (List<Dispensa>) fichaRepositorio.findAll();
+    return (List<Dispensa>) dispensaRepositorio.findAll();
   }
 
   @Override
   public Dispensa incluir(Dispensa dispensa) {
-    validarInclusaoFichaDispensa(dispensa);
-    return fichaRepositorio.save(dispensa);
+    validarInclusaoDispensa(dispensa);
+    return dispensaRepositorio.save(dispensa);
   }
 
   @Override
@@ -31,24 +31,24 @@ public class DispensaServico implements IDispensaServico {
 
   @Override
   public void excluir(long id) {
-    validarExclusaoFichaDispensa(id);
-    fichaRepositorio.deleteById(id);
+    validarExclusaoDispensa(id);
+    dispensaRepositorio.deleteById(id);
   }
 
-  private void validarInclusaoFichaDispensa(Dispensa ficha) {
+  private void validarInclusaoDispensa(Dispensa ficha) {
     if (ficha == null) {
       throw new SisrepException("Dados nulos");
     }
 
   }
 
-  private void validarExclusaoFichaDispensa(Long id) {
+  private void validarExclusaoDispensa(Long id) {
     if (id == null) {
       throw new SisrepException(
           "Ocorreu um erro ao excluir ficha de dispensa: Informe o identificador correto");
     }
 
-    if (!fichaRepositorio.existsById(id)) {
+    if (!dispensaRepositorio.existsById(id)) {
       throw new NaoEncontradoException(
           "Ocorreu um erro ao excluir ficha de dispensa: ficha de dispensa não encontrada");
     }
