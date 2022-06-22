@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.core.fichaDispensa;
+package br.upe.sistemas.sisrep.sisrep.core.dispensa;
 
 import java.io.File;
 import java.util.List;
@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "ficha_dispensa", schema = "public")
-public class FichaDispensa {
+public class Dispensa {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;

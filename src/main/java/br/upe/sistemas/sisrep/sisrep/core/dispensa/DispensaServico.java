@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.core.fichaDispensa;
+package br.upe.sistemas.sisrep.sisrep.core.dispensa;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,24 +7,24 @@ import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
 import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
 @Service
-public class FichaDispensaServico implements IFichaDispensaServico {
+public class DispensaServico implements IDispensaServico {
 
   @Autowired
-  IFichaDispensaRepositorio fichaRepositorio;
+  DispensaRepositorio fichaRepositorio;
 
   @Override
-  public List<FichaDispensa> listar() {
-    return (List<FichaDispensa>) fichaRepositorio.findAll();
+  public List<Dispensa> listar() {
+    return (List<Dispensa>) fichaRepositorio.findAll();
   }
 
   @Override
-  public FichaDispensa incluir(FichaDispensa fichaDispensa) {
-    validarInclusaoFichaDispensa(fichaDispensa);
-    return fichaRepositorio.save(fichaDispensa);
+  public Dispensa incluir(Dispensa dispensa) {
+    validarInclusaoFichaDispensa(dispensa);
+    return fichaRepositorio.save(dispensa);
   }
 
   @Override
-  public FichaDispensa alterar(FichaDispensa fichaDispensa) {
+  public Dispensa alterar(Dispensa dispensa) {
     // TODO Auto-generated method stub
     return null;
   }
@@ -35,7 +35,7 @@ public class FichaDispensaServico implements IFichaDispensaServico {
     fichaRepositorio.deleteById(id);
   }
 
-  private void validarInclusaoFichaDispensa(FichaDispensa ficha) {
+  private void validarInclusaoFichaDispensa(Dispensa ficha) {
     if (ficha == null) {
       throw new SisrepException("Dados nulos");
     }

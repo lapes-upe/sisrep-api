@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.upe.sistemas.sisrep.sisrep.api.vos.FichaDispensaVO;
-import br.upe.sistemas.sisrep.sisrep.core.fichaDispensa.FichaDispensa;
-import br.upe.sistemas.sisrep.sisrep.core.fichaDispensa.FichaDispensaServico;
+import br.upe.sistemas.sisrep.sisrep.core.dispensa.Dispensa;
+import br.upe.sistemas.sisrep.sisrep.core.dispensa.DispensaServico;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -22,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class FichaDispensaAPI {
 
-  private final FichaDispensaServico fichaServico;
+  private final DispensaServico fichaServico;
 
   @GetMapping("/fichas")
   public ResponseEntity<List<FichaDispensaVO>> listarFichasDispensa() {
@@ -35,7 +35,7 @@ public class FichaDispensaAPI {
     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
         .path("/api/sisrep/ficha").toUriString());
 
-    FichaDispensa ficha = convertToModel(fichaVo);
+    Dispensa ficha = convertToModel(fichaVo);
     FichaDispensaVO vo = convertToVo(fichaServico.incluir(ficha));
 
     return ResponseEntity.created(uri).body(vo);
@@ -48,16 +48,16 @@ public class FichaDispensaAPI {
     fichaServico.excluir(id);
   }
 
-  private FichaDispensaVO convertToVo(FichaDispensa fichaDispensa) {
-    FichaDispensaVO vo = FichaDispensaVO.builder().id(fichaDispensa.getId())
-        .disciplina(fichaDispensa.getDisciplina()).status(fichaDispensa.getStatus())
-        .documentacao(fichaDispensa.getDocumentacao()).build();
+  private FichaDispensaVO convertToVo(Dispensa dispensa) {
+    FichaDispensaVO vo = FichaDispensaVO.builder().id(dispensa.getId())
+        .disciplina(dispensa.getDisciplina()).status(dispensa.getStatus())
+        .documentacao(dispensa.getDocumentacao()).build();
 
     return vo;
   }
 
-  private FichaDispensa convertToModel(FichaDispensaVO vo) {
-    return FichaDispensa.builder().id(vo.getId()).disciplina(vo.getDisciplina())
+  private Dispensa convertToModel(FichaDispensaVO vo) {
+    return Dispensa.builder().id(vo.getId()).disciplina(vo.getDisciplina())
         .status(vo.getStatus()).documentacao(vo.getDocumentacao()).build();
   }
 }
