@@ -1,6 +1,6 @@
 package br.upe.sistemas.sisrep.sisrep.api.vos;
 
-import br.upe.sistemas.sisrep.sisrep.core.instituicaoExterna.InstituicaoExterna;
+import br.upe.sistemas.sisrep.sisrep.core.instituicao.Instituicao;
 import lombok.Builder;
 import lombok.Data;
 
@@ -9,5 +9,5 @@ import lombok.Data;
 public class CursoVO {
   private Long id;
   private String nome;
-  private InstituicaoExterna ies;
+  private Instituicao ies;
 }
