@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino;
+package br.upe.sistemas.sisrep.sisrep.core.instituicaoExterna;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,24 +7,24 @@ import br.upe.sistemas.sisrep.sisrep.excecao.NaoEncontradoException;
 import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 
 @Service
-public class InstituicaoEnsinoServico implements IInstituicaoEnsinoServico {
+public class InstituicaoExternaServico implements IInstituicaoExternaServico {
 
   @Autowired
-  private IInstituicaoEnsinoRepositorio iesRepositorio;
+  private IInstituicaoExternaRepositorio iesRepositorio;
 
   @Override
-  public List<InstituicaoEnsino> listar() {
-    return (List<InstituicaoEnsino>) iesRepositorio.findAll();
+  public List<InstituicaoExterna> listar() {
+    return (List<InstituicaoExterna>) iesRepositorio.findAll();
   }
 
   @Override
-  public InstituicaoEnsino incluir(InstituicaoEnsino ies) {
+  public InstituicaoExterna incluir(InstituicaoExterna ies) {
     validarInclusaoIes(ies);
     return iesRepositorio.save(ies);
   }
 
   @Override
-  public InstituicaoEnsino alterar(InstituicaoEnsino ies) {
+  public InstituicaoExterna alterar(InstituicaoExterna ies) {
     return null;
   }
 
@@ -35,7 +35,7 @@ public class InstituicaoEnsinoServico implements IInstituicaoEnsinoServico {
 
   }
 
-  private void validarInclusaoIes(InstituicaoEnsino ies) {
+  private void validarInclusaoIes(InstituicaoExterna ies) {
     if (ies == null) {
       throw new SisrepException("Dados nulos");
     }

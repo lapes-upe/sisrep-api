@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino;
+package br.upe.sistemas.sisrep.sisrep.core.instituicaoExterna;
 
 import java.util.List;
 import javax.persistence.Entity;
@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "instituicao_ensino", schema = "public")
-public class InstituicaoEnsino {
+public class InstituicaoExterna {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;

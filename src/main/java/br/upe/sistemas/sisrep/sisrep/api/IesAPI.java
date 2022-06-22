@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.upe.sistemas.sisrep.sisrep.api.vos.IesVO;
-import br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino.InstituicaoEnsino;
-import br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino.InstituicaoEnsinoServico;
+import br.upe.sistemas.sisrep.sisrep.core.instituicaoExterna.InstituicaoExterna;
+import br.upe.sistemas.sisrep.sisrep.core.instituicaoExterna.InstituicaoExternaServico;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -22,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class IesAPI {
 
-  private final InstituicaoEnsinoServico iesServico;
+  private final InstituicaoExternaServico iesServico;
 
   @GetMapping("/instituicoes")
   public ResponseEntity<List<IesVO>> listarInstituicoes() {
@@ -35,7 +35,7 @@ public class IesAPI {
     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
         .path("/api/sisrep/instituicao").toUriString());
 
-    InstituicaoEnsino ies = convertToModel(iesVo);
+    InstituicaoExterna ies = convertToModel(iesVo);
     IesVO vo = convertToVO(iesServico.incluir(ies));
 
     return ResponseEntity.created(uri).body(vo);
@@ -48,14 +48,14 @@ public class IesAPI {
     iesServico.excluir(id);
   }
 
-  private IesVO convertToVO(InstituicaoEnsino ies) {
+  private IesVO convertToVO(InstituicaoExterna ies) {
     IesVO vo = IesVO.builder().id(ies.getId()).nome(ies.getNome()).build();
 
     return vo;
   }
 
-  private InstituicaoEnsino convertToModel(IesVO vo) {
-    return InstituicaoEnsino.builder().id(vo.getId()).nome(vo.getNome()).build();
+  private InstituicaoExterna convertToModel(IesVO vo) {
+    return InstituicaoExterna.builder().id(vo.getId()).nome(vo.getNome()).build();
   }
 
 }

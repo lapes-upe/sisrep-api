@@ -10,7 +10,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
-import br.upe.sistemas.sisrep.sisrep.core.instituicaoEnsino.InstituicaoEnsino;
+import br.upe.sistemas.sisrep.sisrep.core.instituicaoExterna.InstituicaoExterna;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,5 +36,5 @@ public class Curso {
 
   @ManyToOne
   @NotBlank(message = "A instituição de ensino é obrigatória")
-  private InstituicaoEnsino instituicaoEnsino;
+  private InstituicaoExterna instituicaoExterna;
 }
