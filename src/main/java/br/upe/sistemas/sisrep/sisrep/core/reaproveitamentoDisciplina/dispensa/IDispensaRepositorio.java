@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 
 @Repository
-public interface DispensaRepositorio extends JpaRepository<Dispensa, Long> {
+public interface IDispensaRepositorio extends JpaRepository<Dispensa, Long> {
   Optional<Dispensa> findByUsuario(Usuario usuario);
 }

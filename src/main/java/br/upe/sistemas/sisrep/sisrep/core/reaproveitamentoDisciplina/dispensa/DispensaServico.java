@@ -10,7 +10,7 @@ import br.upe.sistemas.sisrep.sisrep.excecao.SisrepException;
 public class DispensaServico implements IDispensaServico {
 
   @Autowired
-  DispensaRepositorio fichaRepositorio;
+  IDispensaRepositorio fichaRepositorio;
 
   @Override
   public List<Dispensa> listar() {
