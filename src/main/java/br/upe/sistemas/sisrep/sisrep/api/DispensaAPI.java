@@ -20,7 +20,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/sisrep")
 @RequiredArgsConstructor
-public class FichaDispensaAPI {
+public class DispensaAPI {
 
   private final DispensaServico fichaServico;
 
