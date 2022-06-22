@@ -50,13 +50,14 @@ public class FichaDispensaAPI {
 
   private FichaDispensaVO convertToVo(FichaDispensa fichaDispensa) {
     FichaDispensaVO vo = FichaDispensaVO.builder().id(fichaDispensa.getId())
-        .usuario(fichaDispensa.getUsuario()).status(fichaDispensa.getStatus()).build();
+        .disciplinas(fichaDispensa.getDisciplinas()).status(fichaDispensa.getStatus())
+        .documentacao(fichaDispensa.getDocumentacao()).build();
 
     return vo;
   }
 
   private FichaDispensa convertToModel(FichaDispensaVO vo) {
-    return FichaDispensa.builder().id(vo.getId()).usuario(vo.getUsuario()).status(vo.getStatus())
-        .build();
+    return FichaDispensa.builder().id(vo.getId()).disciplinas(vo.getDisciplinas())
+        .status(vo.getStatus()).documentacao(vo.getDocumentacao()).build();
   }
 }

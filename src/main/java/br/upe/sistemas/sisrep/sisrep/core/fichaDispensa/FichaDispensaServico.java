@@ -40,10 +40,6 @@ public class FichaDispensaServico implements IFichaDispensaServico {
       throw new SisrepException("Dados nulos");
     }
 
-    if (fichaRepositorio.findByUsuario(ficha.getUsuario()).isPresent()) {
-      throw new SisrepException(
-          "Ocorreu um erro ao incluir ficha de dispensa: já existe uma ficha de dispensa cadastrada para esse usuário.");
-    }
   }
 
   private void validarExclusaoFichaDispensa(Long id) {
