@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 import br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa.Dispensa;
 import lombok.AllArgsConstructor;
@@ -23,7 +24,10 @@ public class FichaDispensa {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
+
+  @NotBlank(message = "O requerente é obrigatório")
   private Usuario requerente;
+
   private String emailReceptorSolicitacao;
   private String emailEmissorParecer;
   private String emailAnalistaParecer;
