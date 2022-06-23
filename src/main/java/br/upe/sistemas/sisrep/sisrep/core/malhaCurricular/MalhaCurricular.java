@@ -42,6 +42,6 @@ public class MalhaCurricular {
   @ManyToOne
   private Curso curso;
 
-  @OneToMany(mappedBy = "malha_curricular")
+  @OneToMany
   private List<Disciplina> disciplinas;
 }

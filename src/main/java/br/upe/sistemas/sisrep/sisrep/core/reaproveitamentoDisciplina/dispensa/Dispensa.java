@@ -1,7 +1,5 @@
 package br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa;
 
-import java.io.File;
-import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,7 +25,7 @@ public class Dispensa {
 
   private StatusReaproveitamentoDisciplinaEnum status;
 
-  private List<File> documentacao;
+  // private List<File> documentacao;
 
   @OneToOne
   private Disciplina disciplina;
