@@ -52,6 +52,7 @@ public class DisciplinaAPI {
     DisciplinaVO vo = DisciplinaVO.builder().id(disciplina.getId()).nome(disciplina.getNome())
         .cargaHorariaTeorica(disciplina.getCargaHorariaTeorica())
         .cargaHorariaPratica(disciplina.getCargaHorariaPratica()).periodo(disciplina.getPeriodo())
+        .preRequisitos(disciplina.getPreRequisitos()).coRequisitos(disciplina.getCoRequisitos())
         .ementa(disciplina.getEmenta()).natureza(disciplina.getNatureza())
         .malha(disciplina.getMalhaCurricular()).build();
 
@@ -62,6 +63,7 @@ public class DisciplinaAPI {
     return Disciplina.builder().id(vo.getId()).nome(vo.getNome())
         .cargaHorariaTeorica(vo.getCargaHorariaTeorica())
         .cargaHorariaPratica(vo.getCargaHorariaPratica()).periodo(vo.getPeriodo())
+        .preRequisitos(vo.getPreRequisitos()).coRequisitos(vo.getCoRequisitos())
         .ementa(vo.getEmenta()).natureza(vo.getNatureza()).malhaCurricular(vo.getMalha()).build();
   }
 
