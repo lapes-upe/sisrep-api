@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.api.vos;
+package br.upe.sistemas.sisrep.sisrep.api.envelope;
 
 import java.io.File;
 import java.util.List;
@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class DispensaVO {
+public class DispensaEnvelope {
   private Long id;
   private StatusReaproveitamentoDisciplinaEnum status;
   private List<File> documentacao;

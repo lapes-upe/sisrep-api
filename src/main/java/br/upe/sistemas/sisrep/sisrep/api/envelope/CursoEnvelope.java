@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.api.vos;
+package br.upe.sistemas.sisrep.sisrep.api.envelope;
 
 import java.util.List;
 import br.upe.sistemas.sisrep.sisrep.core.instituicao.Instituicao;
@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class CursoVO {
+public class CursoEnvelope {
   private Long id;
   private String nome;
   private List<MalhaCurricular> malhas;

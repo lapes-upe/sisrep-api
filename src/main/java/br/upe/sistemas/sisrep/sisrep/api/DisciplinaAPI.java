@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import br.upe.sistemas.sisrep.sisrep.api.vos.DisciplinaVO;
+import br.upe.sistemas.sisrep.sisrep.api.envelope.DisciplinaEnvelope;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.Disciplina;
 import br.upe.sistemas.sisrep.sisrep.core.disciplina.DisciplinaServico;
 import lombok.RequiredArgsConstructor;
@@ -25,18 +25,18 @@ public class DisciplinaAPI {
   private final DisciplinaServico disciplinaServico;
 
   @GetMapping("/disciplinas")
-  public ResponseEntity<List<DisciplinaVO>> listarDisciplinas() {
+  public ResponseEntity<List<DisciplinaEnvelope>> listarDisciplinas() {
     return ResponseEntity.ok(disciplinaServico.listar().stream().map((e) -> convertToVO(e))
         .collect(Collectors.toList()));
   }
 
   @PostMapping("/disciplina")
-  public ResponseEntity<DisciplinaVO> incluirDisciplina(@RequestBody DisciplinaVO disciplinaVo) {
+  public ResponseEntity<DisciplinaEnvelope> incluirDisciplina(@RequestBody DisciplinaEnvelope disciplinaVo) {
     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
         .path("/api/sisrep/disciplina").toUriString());
 
     Disciplina disciplina = convertToModel(disciplinaVo);
-    DisciplinaVO vo = convertToVO(disciplinaServico.incluir(disciplina));
+    DisciplinaEnvelope vo = convertToVO(disciplinaServico.incluir(disciplina));
 
     return ResponseEntity.created(uri).body(vo);
   }
@@ -48,8 +48,8 @@ public class DisciplinaAPI {
     disciplinaServico.excluir(id);
   }
 
-  private DisciplinaVO convertToVO(Disciplina disciplina) {
-    DisciplinaVO vo = DisciplinaVO.builder().id(disciplina.getId()).nome(disciplina.getNome())
+  private DisciplinaEnvelope convertToVO(Disciplina disciplina) {
+    DisciplinaEnvelope vo = DisciplinaEnvelope.builder().id(disciplina.getId()).nome(disciplina.getNome())
         .cargaHorariaTeorica(disciplina.getCargaHorariaTeorica())
         .cargaHorariaPratica(disciplina.getCargaHorariaPratica()).periodo(disciplina.getPeriodo())
         .preRequisitos(disciplina.getPreRequisitos()).coRequisitos(disciplina.getCoRequisitos())
@@ -59,7 +59,7 @@ public class DisciplinaAPI {
     return vo;
   }
 
-  private Disciplina convertToModel(DisciplinaVO vo) {
+  private Disciplina convertToModel(DisciplinaEnvelope vo) {
     return Disciplina.builder().id(vo.getId()).nome(vo.getNome())
         .cargaHorariaTeorica(vo.getCargaHorariaTeorica())
         .cargaHorariaPratica(vo.getCargaHorariaPratica()).periodo(vo.getPeriodo())

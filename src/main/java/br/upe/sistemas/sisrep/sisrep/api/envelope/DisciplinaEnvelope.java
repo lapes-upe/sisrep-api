@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.api.vos;
+package br.upe.sistemas.sisrep.sisrep.api.envelope;
 
 import java.io.File;
 import java.util.List;
@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class DisciplinaVO {
+public class DisciplinaEnvelope {
   private Long id;
   private String nome;
   private int cargaHorariaTeorica;

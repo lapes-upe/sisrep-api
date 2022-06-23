@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import br.upe.sistemas.sisrep.sisrep.api.vos.CursoVO;
+import br.upe.sistemas.sisrep.sisrep.api.envelope.CursoEnvelope;
 import br.upe.sistemas.sisrep.sisrep.core.curso.Curso;
 import br.upe.sistemas.sisrep.sisrep.core.curso.CursoServico;
 import lombok.RequiredArgsConstructor;
@@ -25,18 +25,18 @@ public class CursoAPI {
   private final CursoServico cursoServico;
 
   @GetMapping("/cursos")
-  public ResponseEntity<List<CursoVO>> listarCursos() {
+  public ResponseEntity<List<CursoEnvelope>> listarCursos() {
     return ResponseEntity
         .ok(cursoServico.listar().stream().map((e) -> convertToVO(e)).collect(Collectors.toList()));
   }
 
   @PostMapping("/curso")
-  public ResponseEntity<CursoVO> incluirCurso(@RequestBody CursoVO cursoVo) {
+  public ResponseEntity<CursoEnvelope> incluirCurso(@RequestBody CursoEnvelope cursoVo) {
     URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath()
         .path("/api/sisrep/curso").toUriString());
 
     Curso curso = convertToModel(cursoVo);
-    CursoVO vo = convertToVO(cursoServico.incluir(curso));
+    CursoEnvelope vo = convertToVO(cursoServico.incluir(curso));
 
     return ResponseEntity.created(uri).body(vo);
   }
@@ -48,14 +48,14 @@ public class CursoAPI {
     cursoServico.excluir(id);
   }
 
-  private CursoVO convertToVO(Curso curso) {
-    CursoVO vo = CursoVO.builder().id(curso.getId()).nome(curso.getNome())
+  private CursoEnvelope convertToVO(Curso curso) {
+    CursoEnvelope vo = CursoEnvelope.builder().id(curso.getId()).nome(curso.getNome())
         .instituicao(curso.getInstituicao()).malhas(curso.getMalhas()).build();
 
     return vo;
   }
 
-  private Curso convertToModel(CursoVO vo) {
+  private Curso convertToModel(CursoEnvelope vo) {
     return Curso.builder().id(vo.getId()).nome(vo.getNome()).instituicao(vo.getInstituicao())
         .malhas(vo.getMalhas()).build();
   }

@@ -1,4 +1,4 @@
-package br.upe.sistemas.sisrep.sisrep.api.vos;
+package br.upe.sistemas.sisrep.sisrep.api.envelope;
 
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
 import br.upe.sistemas.sisrep.sisrep.core.reaproveitamentoDisciplina.dispensa.Dispensa;
@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class FichaDispensaVO {
+public class FichaDispensaEnvelope {
   private Long id;
   private Usuario requerente;
   private String emailReceptorSolicitacao;
