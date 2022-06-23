@@ -1,11 +1,13 @@
 package br.upe.sistemas.sisrep.sisrep.core.disciplina;
 
 import java.io.File;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import br.upe.sistemas.sisrep.sisrep.core.malhaCurricular.MalhaCurricular;
@@ -40,11 +42,13 @@ public class Disciplina {
   @NotBlank(message = "O período é obrigatório")
   private int periodo;
 
-  // @NotBlank(message = "Os pré-requisitos da disciplina é obrigatório")
-  // private List<Disciplina> preRequisitos;
-  //
-  // @NotBlank(message = "Os có-requisitos da disciplina é obrigatório")
-  // private List<Disciplina> coRequisitos;
+  @OneToMany
+  @NotBlank(message = "Os pré-requisitos da disciplina é obrigatório")
+  private List<Disciplina> preRequisitos;
+
+  @OneToMany
+  @NotBlank(message = "Os có-requisitos da disciplina é obrigatório")
+  private List<Disciplina> coRequisitos;
 
   @NotBlank(message = "A ementa é obrigatória")
   private File ementa;
