@@ -9,5 +9,6 @@ public class PerfilVO {
 
   private Long id;
   private String nome;
+  private boolean ativo;
   private byte[] icone;
 }

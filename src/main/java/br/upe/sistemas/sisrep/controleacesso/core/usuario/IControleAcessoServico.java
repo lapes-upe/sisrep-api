@@ -1,5 +1,8 @@
 package br.upe.sistemas.sisrep.controleacesso.core.usuario;
 
+import br.upe.sistemas.sisrep.controleacesso.api.vos.ControleAcessoVO;
+
+import java.security.Principal;
 import java.util.List;
 
 public interface IControleAcessoServico {
@@ -23,4 +26,6 @@ public interface IControleAcessoServico {
   void excluirPerfil(Long id);
 
   List<Perfil> listarPerfis();
+
+  ControleAcessoVO entrarNoSistema(Principal principal);
 }

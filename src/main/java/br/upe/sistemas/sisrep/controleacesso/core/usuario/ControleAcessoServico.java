@@ -1,8 +1,13 @@
 package br.upe.sistemas.sisrep.controleacesso.core.usuario;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import br.upe.sistemas.sisrep.controleacesso.api.vos.ControleAcessoVO;
+import br.upe.sistemas.sisrep.controleacesso.api.vos.PerfilUsuarioVO;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -10,6 +15,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -251,6 +258,72 @@ public class ControleAcessoServico implements IControleAcessoServico, UserDetail
     return new User(usuario.getEmail(), usuario.getToken(), permissoes);
   }
 
+  @Override
+  public ControleAcessoVO entrarNoSistema(Principal principal) {
+    ControleAcessoVO controleAcessoVO = new ControleAcessoVO();
+    OAuth2AuthenticationToken auth = (OAuth2AuthenticationToken) principal;
 
+    log.debug("Entrando no sistema");
+
+    if(auth.getPrincipal() == null) {
+      log.error("Não foi possível recuperar dados do Principal");
+      throw new ControleAcessoException("Não foi possível recuperar informações do usuário");
+    }
+
+    if(auth.getPrincipal().getAttributes() == null) {
+      log.error("Não foi possível recuperar atributos do Principal");
+      throw new ControleAcessoException("Não foi possível recuperar as informações do usuário");
+    }
+
+    if(auth.getPrincipal().getAttributes().get("name") == null) {
+      log.error("Não foi possível recuperar nome do usuário");
+      throw new ControleAcessoException("Não foi possível recuperar as informações do usuário");
+    }
+    controleAcessoVO.setNome((String) auth.getPrincipal().getAttributes().get("name"));
+
+    if(auth.getPrincipal().getAttributes().get("email") == null) {
+      log.error("Não foi possível recuperar email do usuário");
+      throw new ControleAcessoException("Não foi possível recuperar as informações do usuário");
+    }
+    controleAcessoVO.setEmail((String) auth.getPrincipal().getAttributes().get("email"));
+
+    if(auth.getPrincipal().getAttributes().get("picture") == null) {
+      log.error("Não foi possível recuperar foto do usuário");
+      throw new ControleAcessoException("Não foi possível recuperar as informações do usuário");
+    }
+    controleAcessoVO.setAvatarPerfil((String) auth.getPrincipal().getAttributes().get("picture"));
+
+    if(((DefaultOidcUser) auth.getPrincipal()).getIdToken().getTokenValue() == null) {
+      log.error("Não foi possível recuperar token do usuário");
+      throw new ControleAcessoException("Não foi possível recuperar as informações do usuário");
+    }
+    controleAcessoVO.setToken(((DefaultOidcUser) auth.getPrincipal()).getIdToken().getTokenValue());
+
+    if(((DefaultOidcUser) auth.getPrincipal()).getIdToken().getExpiresAt() == null) {
+      log.error("Não foi possível recuperar a expiração do token do usuário");
+      throw new ControleAcessoException("Não foi possível recuperar as informações do usuário");
+    }
+    controleAcessoVO.setTokenExpiracao(String.valueOf(((DefaultOidcUser) auth.getPrincipal()).getIdToken().getExpiresAt()));
+
+    if(usuarioRepo.findByEmailIgnoreCase(controleAcessoVO.getEmail()) == null) {
+      controleAcessoVO.setRedirecionarCadastro(true);
+    } else {
+      controleAcessoVO.setRedirecionarCadastro(false);
+      controleAcessoVO.setPerfis(listarPerfisDoUsuario(controleAcessoVO.getEmail()));
+    }
+
+    return controleAcessoVO;
+  }
+
+  private List<PerfilUsuarioVO> listarPerfisDoUsuario(String email) {
+
+    Usuario usuario = buscarUsuarioPorEmail(email);
+
+    List<PerfilUsuarioVO> vos = usuario.getPerfis().stream().map(
+                    perfil -> PerfilUsuarioVO.builder().nome(perfil.getNome()).icone(perfil.getIcone()).build())
+            .collect(Collectors.toList());
+
+    return vos;
+  }
 }
 

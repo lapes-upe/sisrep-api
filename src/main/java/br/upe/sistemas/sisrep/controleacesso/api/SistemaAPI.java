@@ -22,7 +22,6 @@ import lombok.RequiredArgsConstructor;
 public class SistemaAPI {
 
   private final ISistemaServico ctrlSistema;
-  private final IControleAcessoServico ctrlAcessoServico;
 
   @GetMapping("/servicos")
   public ResponseEntity<?> listarServicos() {
@@ -40,17 +39,5 @@ public class SistemaAPI {
     }
 
     return retorno;
-  }
-
-  @GetMapping("/perfis")
-  public ResponseEntity<List<PerfilUsuarioVO>> listarPerfis(@RequestBody UsuarioVO usuarioVO) {
-
-    Usuario usuario = ctrlAcessoServico.buscarUsuarioPorEmail(usuarioVO.getEmail());
-
-    List<PerfilUsuarioVO> vos = usuario.getPerfis().stream().map(
-        perfil -> PerfilUsuarioVO.builder().nome(perfil.getNome()).icone(perfil.getIcone()).build())
-        .collect(Collectors.toList());
-
-    return ResponseEntity.status(HttpStatus.FOUND).body(vos);
   }
 }

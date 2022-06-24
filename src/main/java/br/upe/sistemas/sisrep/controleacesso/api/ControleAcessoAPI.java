@@ -1,11 +1,18 @@
 package br.upe.sistemas.sisrep.controleacesso.api;
 
 import java.net.URI;
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.naming.ldap.Control;
 import javax.validation.Valid;
+
+import br.upe.sistemas.sisrep.controleacesso.api.vos.*;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,9 +22,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import br.upe.sistemas.sisrep.controleacesso.api.vos.AssociarPerfilVO;
-import br.upe.sistemas.sisrep.controleacesso.api.vos.PerfilVO;
-import br.upe.sistemas.sisrep.controleacesso.api.vos.UsuarioVO;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.IControleAcessoServico;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Perfil;
 import br.upe.sistemas.sisrep.controleacesso.core.usuario.Usuario;
@@ -108,6 +112,11 @@ public class ControleAcessoAPI {
     Usuario usuario = ctrlAcessoServico.adicionarPerfilAoUsuario(vo.getEmail(), vo.getPerfil());
 
     return ResponseEntity.ok().body(convert(usuario));
+  }
+
+  @GetMapping("/entrar")
+  public ResponseEntity<ControleAcessoVO> entrar(Principal principal) {
+    return ResponseEntity.ok(ctrlAcessoServico.entrarNoSistema(principal));
   }
 
   private Usuario convert(UsuarioVO vo) {

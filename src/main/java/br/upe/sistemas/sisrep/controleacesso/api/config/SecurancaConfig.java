@@ -30,12 +30,16 @@ public class SecurancaConfig extends WebSecurityConfigurerAdapter {
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
-    http.csrf().disable();
-    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-    // TODO:melhorar estas configurações
-    // http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/controleacesso/**").permitAll();
-    http.authorizeRequests().anyRequest().permitAll();
-    http.addFilter(new AutenticacaoFiltro(authenticationManagerBean()));
+//    http.csrf().disable();
+//    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//    // TODO:melhorar estas configurações
+//    // http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/controleacesso/**").permitAll();
+//    http.authorizeRequests().anyRequest();
+//    http.addFilter(new AutenticacaoFiltro(authenticationManagerBean()));
+    http.authorizeRequests()
+            .anyRequest().authenticated()
+            .and()
+            .oauth2Login();
   }
 
   @Bean
